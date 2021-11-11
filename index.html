@@ -1,0 +1,44 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+  <div id="container">
+
+  </div>
+</body>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+<script>
+  let container = d3.select("#container")
+  d3.csv("emdatDisasters.csv").then(function (data) {
+    data.sort((a,b) => { //changes original list (data)
+      return d3.ascending(a.Country, b.Country)
+    })
+    let filteredData = data.filter(d => { //creates new list filteredData
+      return d.Deaths < 100
+    })
+    showData(filteredData)
+  })
+
+  function showData(lines) {
+    for (let line of lines) {
+      write(line.Country +
+      "," +
+      line.Type +
+      "," +
+      line.Deaths)
+    }
+  }
+
+  function write (text) {
+    container.append("div").text(text)
+  }
+</script>
+
+
+
+</html>
