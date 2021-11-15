@@ -3,40 +3,150 @@
 <head>
 
 </head>
+<style>
+    body {
+        font-family: Helvetica, Arial, sans-serif
+    }
 
+    h1 {
+        background-color: #2a5599;
+        color: rgb(255,255,255);
+        padding: 5px;
+        /* TODO 1
+        change the text to white and add a padding of 5px
+        2 lines of code
+        */
+    }
+
+    svg {
+      border-style: solid;
+      border-width: 1px;
+      border-color: rgb(0,0,0);
+    }
+    /* TODO 2
+    Add code to show a black border of 1px around all SVGs elements in the page
+    1-3 lines of code
+    */
+
+    .mainView {
+      display: flex;
+    }
+
+    /* TODO 3
+     - Use the "display flex" feature from to show the items from class `mainView` side by side
+     1-3 lines of cide
+    */
+</style>
 <body>
-  <div id="container">
-
-  </div>
+    <h1>Airlines Routes</h1>
+    <div class="mainView">
+        <div>
+            <h2>Airlines</h2>
+            <svg id="AirlinesChart"></svg>
+        </div>
+        <div>
+            <h2>Airports</h2>
+            <svg id="Map"></svg>
+        </div>
+    </div>
 </body>
 
 <script src="https://d3js.org/d3.v7.min.js"></script>
 
 <script>
-  let container = d3.select("#container")
-  d3.csv("emdatDisasters.csv").then(function (data) {
-    data.sort((a,b) => { //changes original list (data)
-      return d3.ascending(a.Country, b.Country)
-    })
-    let filteredData = data.filter(d => { //creates new list filteredData
-      return d.Deaths < 100
-    })
-    showData(filteredData)
-  })
 
-  function showData(lines) {
-    for (let line of lines) {
-      write(line.Country +
-      "," +
-      line.Type +
-      "," +
-      line.Deaths)
+let store = {}
+
+//load data from files
+function loadData() {
+    return Promise.all([
+        d3.csv("emdatDisasters.csv"),
+        d3.json("countries.geo.json"),
+    ]).then(datasets => {
+        store.disasters = datasets[0];
+        store.geoJSON = datasets[1]
+        return store;
+    })
+}
+
+//function for showing all data
+function showData() {
+ console.log(groupByDisaster(store.disasters))
+ drawMap(store.geoJSON) //draw world map
+}
+
+//finally load and show data
+loadData().then(showData);
+
+//all functions for manipulating data
+
+//group countries by amount of natural disasters
+function groupByDisaster(data) {
+    //Iterate over each route, producing a dictionary where
+    //the keys are country names and the values are the information
+    //about the natural disasters for that country
+
+    let result = data.reduce((result, d) => {
+        let currentData = result[d.Country] || {
+            "countryName": d.Country,
+            "disasterCount": 0
+        }
+
+        currentData.disasterCount += 1 //increment for every new disaster
+
+        result[d.Country] = currentData //log new object for each country with latest count
+
+        return result;
+    }, {})
+
+        //convert dictionary into a list
+        result = Object.keys(result).map(key => result[key])
+        result = result.sort((a,b) => { //list of countries sorted in descending order by amount of disasters
+          return d3.descending(a.disasterCount,b.disasterCount)
+        })
+
+        return result
     }
-  }
 
-  function write (text) {
-    container.append("div").text(text)
-  }
+//configuration for map
+function getMapConfig(){
+  let width = 600;
+  let height = 400;
+  let container = d3.select("#Map") //TODO: select the svg with id Map
+  container.attr("width", width)
+           .attr("height", height) //TODO: set the width and height of the conatiner to be equal the width and height variables.
+  return {width, height, container}
+}
+
+//map projection
+function getMapProjection(config) {
+  let {width, height} = config;
+  let projection = d3.geoMercator()
+  projection.scale(97)
+            .translate([width / 2, height / 2 + 20])
+
+  store.mapProjection = projection;
+  return projection;
+}
+
+//base map
+function drawBaseMap(container, countries, projection){
+  let path = d3.geoPath()
+      .projection(projection)//TODO: create a geoPath generator and set its projection to be the projection passed as parameter.
+
+  container.selectAll("path").data(countries)
+      .enter().append("path")
+      .attr("d", d => path(d)) //TODO: use the path generator to draw each country )
+      .attr("stroke", "#ccc")
+      .attr("fill", "#eee")
+}
+
+//draw map with countries
+function drawMap(geoJeon) {
+    let config = getMapConfig();
+    let projection = getMapProjection(config)
+    drawBaseMap(config.container, geoJeon.features, projection)
+}
 </script>
 
 
