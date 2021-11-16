@@ -71,7 +71,6 @@ function loadData() {
 
 //function for showing all data
 function showData() {
- console.log(groupByDisaster(store.disasters))
  drawMap(store.geoJSON) //draw world map
 }
 
@@ -81,6 +80,8 @@ loadData().then(showData);
 //all functions for manipulating data
 
 //group countries by amount of natural disasters
+//this function can be used independently for making a graph of countries
+//with most to least disasters or as helper function for chloroplet map
 function groupByDisaster(data) {
     //Iterate over each route, producing a dictionary where
     //the keys are country names and the values are the information
@@ -130,7 +131,7 @@ function getMapProjection(config) {
 }
 
 //base map
-function drawBaseMap(container, countries, projection){
+function drawBaseMap(container, countries, projection, scale){
   let path = d3.geoPath()
       .projection(projection)//TODO: create a geoPath generator and set its projection to be the projection passed as parameter.
 
@@ -138,15 +139,56 @@ function drawBaseMap(container, countries, projection){
       .enter().append("path")
       .attr("d", d => path(d)) //TODO: use the path generator to draw each country )
       .attr("stroke", "#ccc")
-      .attr("fill", "#eee")
+      .attr("fill", d => d.properties.disasterCount ? //if there is data for a country
+      scale(d.properties.disasterCount):             //then use the scale. If not data
+      "white")                                         //then use white color
 }
 
 //draw map with countries
 function drawMap(geoJeon) {
+    let scale = createScale();
     let config = getMapConfig();
     let projection = getMapProjection(config)
-    drawBaseMap(config.container, geoJeon.features, projection)
+    drawBaseMap(config.container, geoJeon.features, projection, scale)
 }
+
+//map counts of disasters to specific country in geoJSON
+function addDisastersToJson() {
+
+  dataIndex = {}
+
+  let data = groupByDisaster(store.disasters)
+  let mapInfo = store.geoJSON
+
+  for (let line of data) {
+    let country = line.countryName;
+    dataIndex[country] = line.disasterCount;
+
+  mapInfo.features = mapInfo.features.map(d => {
+    let country = d.properties.name;
+    let disasterCount = dataIndex[country]
+    d.properties.disasterCount = disasterCount;
+    return d
+  })
+  }
+}
+
+//create color scale for chloroplet map based on disasters
+function createScale() {
+
+  addDisastersToJson()
+  let maxAmountOfDisasters = d3.max(store.geoJSON.features, d =>
+    d.properties.disasterCount)
+  let medianAmountOfDisasters = d3.median(store.geoJSON.features, d =>
+    d.properties.disasterCount)
+  console.log(maxAmountOfDisasters)
+  let colorScale = d3.scaleLinear()
+    .domain([0,medianAmountOfDisasters,maxAmountOfDisasters])
+    .range(["white","orange","red"])
+
+  return colorScale
+}
+
 </script>
 
 
