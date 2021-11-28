@@ -34,11 +34,11 @@
 
 
     function showDataByDiaster(disaster) {
-
+        let disaster_data = disaster.filter(d => { return d.Year > 1950 });
         let disaster_count = d3.nest()
             .key(function(d) { return d.Type; })
             .rollup(function(v) { return v.length; })
-            .entries(disaster);
+            .entries(disaster_data);
 
         
         var max = Math.max.apply(Math,disaster_count.map(function(o){return o.value;}))
@@ -75,11 +75,11 @@
 
         let bodyHeight = 500
         let bodyWidth = 800
-
+        let disaster_data = disaster.filter(d => { return d.Year > 1950 });
         let disaster_count = d3.nest()
             .key(function(d) { return d.Year; })
             .rollup(function(v) { return v.length; })
-            .entries(disaster);
+            .entries(disaster_data);
 
         console.log(disaster_count)
 
@@ -109,32 +109,7 @@
             .attr("d", valueline)
             .attr("class", "line");
         
-
-/*
-        var max = Math.max.apply(Math,disaster_count.map(function(o){return o.value;}))
-        console.log(max)
-        let scale = d3.scaleLinear()
-                      .range([0, 800])
-                      .domain([0, max])
-        
-
-        let scalePosition = d3.scaleBand().range([0, 500]).domain(disaster_count.map(d => d.key))
-
-        scalePosition.padding(0.3)
-
-        let join = body2.selectAll("rect")
-            .data(disaster_count)
-
-        join.enter().append("rect").style("fill", "blue").style("stroke", "white").style("width", d => scale(d.value)).style("height", scalePosition.bandwidth()).style("y", d => scalePosition(d.key))
-
-        let xAxis = d3.axisBottom(scale).ticks(5) 
-            
-        d3.select("#xAxis2").attr("transform", "translate(150, 500)").call(xAxis)
-
-        let yAxis = d3.axisLeft(scalePosition)
-
-        d3.select("#yAxis2").attr("transform", "translate(150, 0)").call(yAxis)
-        */
+ 
     }
 
 
