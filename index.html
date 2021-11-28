@@ -23,30 +23,40 @@
         <g id="yAxis2"></g>
         <g id="xAxis2"></g>
     </svg>
+
+    <p>This is the pie chart that represents all the diasters and the total number of occurrences.</p>
+    <svg id="container3" height="300" width="500" , style="border: solid 1px #000">
+        <g id="body3"  style="transform:translate(150px,150px)"></g>
+
+    </svg>
 </body>
 <script src="d3.js"></script>
 
 <script>
     let body = d3.select("#body")
-    d3.csv("emdatDisasters.csv").then(showDataByDiaster)
-    body2 = d3.select("#body2")
+    d3.csv("emdatDisasters.csv").then(showDataByDisaster)
+    let body2 = d3.select("#body2")
     d3.csv("emdatDisasters.csv").then(showDataByYear)
 
+    let body3 = d3.select("#body3")
+    d3.csv("emdatDisasters.csv").then(showDataByDisasterPieChart)
 
-    function showDataByDiaster(disaster) {
+
+    function showDataByDisaster(disaster) {
+
         let disaster_data = disaster.filter(d => { return d.Year > 1950 });
         let disaster_count = d3.nest()
-            .key(function(d) { return d.Type; })
-            .rollup(function(v) { return v.length; })
+            .key(function (d) { return d.Type; })
+            .rollup(function (v) { return v.length; })
             .entries(disaster_data);
 
-        
-        var max = Math.max.apply(Math,disaster_count.map(function(o){return o.value;}))
+
+        var max = Math.max.apply(Math, disaster_count.map(function (o) { return o.value; }))
         console.log(max)
         let scale = d3.scaleLinear()
-                      .range([0, 800])
-                      .domain([0, max])
-        
+            .range([0, 800])
+            .domain([0, max])
+
 
         let scalePosition = d3.scaleBand().range([0, 500]).domain(disaster_count.map(d => d.key))
 
@@ -56,14 +66,14 @@
             .data(disaster_count)
 
         join.enter().append("rect")
-                    .style("fill", "blue")
-                    .style("stroke", "white")
-                    .style("width", d => scale(d.value))
-                    .style("height", scalePosition.bandwidth())
-                    .style("y", d => scalePosition(d.key))
+            .style("fill", "blue")
+            .style("stroke", "white")
+            .style("width", d => scale(d.value))
+            .style("height", scalePosition.bandwidth())
+            .style("y", d => scalePosition(d.key))
 
-        let xAxis = d3.axisBottom(scale).ticks(5) 
-            
+        let xAxis = d3.axisBottom(scale).ticks(5)
+
         d3.select("#xAxis").attr("transform", "translate(150, 500)").call(xAxis)
 
         let yAxis = d3.axisLeft(scalePosition)
@@ -71,17 +81,18 @@
         d3.select("#yAxis").attr("transform", "translate(150, 0)").call(yAxis)
     }
 
-    function showDataByYear(disaster){
+    function showDataByYear(disaster) {
 
         let bodyHeight = 500
         let bodyWidth = 800
         let disaster_data = disaster.filter(d => { return d.Year > 1950 });
+
         let disaster_count = d3.nest()
-            .key(function(d) { return d.Year; })
-            .rollup(function(v) { return v.length; })
+            .key(function (d) { return d.Year; })
+            .rollup(function (v) { return v.length; })
             .entries(disaster_data);
 
-        console.log(disaster_count)
+        //console.log(disaster_count)
 
         let maxValue = d3.max(disaster_count, d => d.value)
 
@@ -94,25 +105,66 @@
 
         let xScale = d3.scaleLinear()
             .domain(d3.extent(disaster_count, d => d.key))
-            .range([0, bodyWidth]); 
-            
+            .range([0, bodyWidth]);
+
         body2.append("g")
             .attr("transform", "translate(0," + bodyHeight + ")")
             .call(d3.axisBottom(xScale).ticks(10).tickFormat(d3.format("d")))
-        
+
         let valueline = d3.line()
             .x(d => xScale(d.key))
-            .y(d => yScale(d.value)) ;
-
+            .y(d => yScale(d.value));
+        //console.log(valueline)
         body2.append("path")
             .datum(disaster_count)
             .attr("d", valueline)
             .attr("class", "line");
-        
- 
+
     }
 
+    function showDataByDisasterPieChart(disaster) {
 
+        let bodyHeight = 200
+        let bodyWidth = 400
+
+        let disaster_data = disaster.filter(d => { return d.Year > 1950 });
+        disaster_data = d3.nest()
+            .key(function (d) { return d.Type; })
+            .rollup(function (v) { return v.length; })
+            .entries(disaster_data);
+        
+        disaster_data = disaster_data.map(d => ({
+            disaster_name: d.key,
+            disaster_count: d.value
+        }))
+
+        
+        let pie = d3.pie()
+            .value(d => d.disaster_count); 
+
+        let colorScale = d3.scaleOrdinal()
+            .range(d3.schemeCategory10)
+            .domain(disaster_data.map(d => d.disaster_name))
+        
+        //console.log(colorScale("Flood"))
+        //console.log(colorScale("Fog"))
+        
+        let arc = d3.arc()
+            .outerRadius(bodyHeight / 2)
+            .innerRadius(50);
+
+        let g = body3.selectAll(".arc")
+            .data(pie(disaster_data))
+            .enter()
+            .append("g");
+
+        g.append("path")
+            .attr("d", arc)
+            .attr("fill", d => {
+                return colorScale(d.data.disaster_name)
+            })
+            .text(function(d, i) { return disaster_data[i].disaster_name; });
+    }
 </script>
 
 </html>
