@@ -45,32 +45,38 @@
     function showDataByDisaster(disaster) {
 
         let disaster_data = disaster.filter(d => { return d.Year > 1950 });
-        let disaster_count = d3.nest()
+        
+        disaster_data = d3.nest()
             .key(function (d) { return d.Type; })
             .rollup(function (v) { return v.length; })
             .entries(disaster_data);
 
+        disaster_data = disaster_data.map(d => ({
+            disaster_name: d.key,
+            disaster_count: d.value
+        }))
 
-        var max = Math.max.apply(Math, disaster_count.map(function (o) { return o.value; }))
+
+        var max = Math.max.apply(Math, disaster_data.map(function (o) { return o.disaster_count; }))
         console.log(max)
         let scale = d3.scaleLinear()
             .range([0, 800])
             .domain([0, max])
 
 
-        let scalePosition = d3.scaleBand().range([0, 500]).domain(disaster_count.map(d => d.key))
+        let scalePosition = d3.scaleBand().range([0, 500]).domain(disaster_data.map(d => d.disaster_name))
 
         scalePosition.padding(0.3)
 
         let join = body.selectAll("rect")
-            .data(disaster_count)
+            .data(disaster_data)
 
         join.enter().append("rect")
             .style("fill", "blue")
             .style("stroke", "white")
-            .style("width", d => scale(d.value))
+            .style("width", d => scale(d.disaster_count))
             .style("height", scalePosition.bandwidth())
-            .style("y", d => scalePosition(d.key))
+            .style("y", d => scalePosition(d.disaster_name))
 
         let xAxis = d3.axisBottom(scale).ticks(5)
 
@@ -87,14 +93,17 @@
         let bodyWidth = 800
         let disaster_data = disaster.filter(d => { return d.Year > 1950 });
 
-        let disaster_count = d3.nest()
+        disaster_data = d3.nest()
             .key(function (d) { return d.Year; })
             .rollup(function (v) { return v.length; })
             .entries(disaster_data);
 
-        //console.log(disaster_count)
+        disaster_data = disaster_data.map(d => ({
+            disaster_year: d.key,
+            disaster_count: d.value
+        }))
 
-        let maxValue = d3.max(disaster_count, d => d.value)
+        let maxValue = d3.max(disaster_data, d => d.disaster_count)
 
         let yScale = d3.scaleLinear()
             .range([bodyHeight, 0])
@@ -104,7 +113,7 @@
             .call(d3.axisLeft(yScale));
 
         let xScale = d3.scaleLinear()
-            .domain(d3.extent(disaster_count, d => d.key))
+            .domain(d3.extent(disaster_data, d => d.disaster_year))
             .range([0, bodyWidth]);
 
         body2.append("g")
@@ -112,11 +121,11 @@
             .call(d3.axisBottom(xScale).ticks(10).tickFormat(d3.format("d")))
 
         let valueline = d3.line()
-            .x(d => xScale(d.key))
-            .y(d => yScale(d.value));
+            .x(d => xScale(d.disaster_year))
+            .y(d => yScale(d.disaster_count));
         //console.log(valueline)
         body2.append("path")
-            .datum(disaster_count)
+            .datum(disaster_data)
             .attr("d", valueline)
             .attr("class", "line");
 
