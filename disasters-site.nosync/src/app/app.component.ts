@@ -5,10 +5,10 @@ import { Component } from '@angular/core';
   template: `
   <!--Header-->
   <app-header></app-header>
-
+  
   <!--Routes injected here!-->
   <router-outlet></router-outlet>
-  
+  <app-about></app-about>
   <!--Footer-->
   <app-footer></app-footer>
 

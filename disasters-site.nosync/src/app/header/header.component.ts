@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
     <div class="navbar is-black">
       <div class="navbar-brand">
         <a class="navbar-item">
-          My logo goes here!
+          Logo or some title 
         </a>
       </div>
     </div>
