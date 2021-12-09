@@ -1,0 +1,19 @@
+.map-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 10px;
+  }
+  
+  .map-frame {
+    position: relative;
+    border: 2px solid darkslategrey;
+    height: 100%;
+  }
+  
+  #map {
+    position: relative;
+    height: 700px;
+  }

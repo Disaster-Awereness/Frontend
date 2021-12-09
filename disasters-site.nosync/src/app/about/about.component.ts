@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-about',
-  template: `
+    selector: 'app-about',
+    template: `
     <!--About section-->
 <section class="hero is-link py-4">
     <div class="hero-body">
@@ -12,12 +12,16 @@ import { Component, OnInit } from '@angular/core';
         <p class="subtitle">
             Lorem dolor ipsum sit amet
         </p>
+        <button
+        class="button is-light is-outlined is-medium">
+        Learn more
+        </button>
     </div>
 </section>     
 
 <div class="columns is-vcentered is-justify-content-space-evenly has-background-dark m-0 p-5">
     <div class="column is-one-third">
-        <img src="Disaster_awareness.png" style="border-radius: 50%;" width="200" />
+        <img src="/assets/img/Disaster_awareness.png" style="border-radius: 50%;" width="200" />
     </div>
 
     <div class="column is-one-third">
@@ -34,14 +38,14 @@ import { Component, OnInit } from '@angular/core';
     </div>
 </div>
   `,
-  styles: [
-  ]
+    styles: [
+    ]
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+    constructor() { }
 
-  ngOnInit(): void {
-  }
+    ngOnInit(): void {
+    }
 
 }

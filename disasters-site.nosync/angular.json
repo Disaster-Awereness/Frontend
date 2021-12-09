@@ -53,6 +53,8 @@
             ],
             "styles": [
               "node_modules/bulma/css/bulma.css",
+              "node_modules/leaflet/dist/leaflet.css",
+              "node_modules/mapbox-gl/dist/mapbox-gl.css",
               "src/styles.scss"
             ],
             "scripts": []
