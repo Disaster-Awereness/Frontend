@@ -1,7 +1,11 @@
 import { Component, AfterViewInit } from '@angular/core';
 import * as L from 'leaflet';
 import 'mapbox-gl-leaflet';
+import { MarkerService } from '../marker.service';
 
+const iconRetinaUrl = 'assets/marker-icon-2x.png';
+const iconUrl = 'assets/marker-icon.png';
+const shadowUrl = 'assets/marker-shadow.png';
 
 @Component({
   selector: 'app-map',
@@ -33,10 +37,11 @@ export class MapComponent implements AfterViewInit {
     tiles.addTo(this.map);
   }
 
-  constructor() { }
+  constructor(private markerService: MarkerService) { }
 
   ngAfterViewInit(): void {
-    this.initMap()
+    this.initMap();
+    this.markerService.makeEarthquakeMarkers(this.map);
   }
 
 
