@@ -20,7 +20,7 @@ import { Component, OnInit } from '@angular/core';
       </p>
       </div>
     <div class="column">
-      Map goes here
+    <app-map></app-map>
     </div>
     </div>
   </section>
