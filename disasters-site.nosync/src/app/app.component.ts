@@ -7,15 +7,21 @@ import { Component } from '@angular/core';
   
   <!--Header-->
   <app-header></app-header>
+
   <!--Routes injected here!-->
   <router-outlet></router-outlet>
+
   <app-about></app-about>
+
   <app-banner></app-banner>
+
+  <app-introduction></app-introduction>
+
   <!--Map section below -->
   <app-map></app-map>
 
 
-  <app-introduction></app-introduction>
+
   <!--Footer-->
   <app-footer></app-footer>
 
