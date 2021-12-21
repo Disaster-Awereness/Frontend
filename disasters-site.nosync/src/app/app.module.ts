@@ -12,6 +12,8 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { MapComponent } from './map/map.component';
+import { BannerComponent } from './banner/banner.component';
+import { IntroductionComponent } from './introduction/introduction.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { MapComponent } from './map/map.component';
     FooterComponent,
     HomeComponent,
     AboutComponent,
-    MapComponent
+    MapComponent,
+    BannerComponent,
+    IntroductionComponent
   ],
   imports: [
     BrowserModule,
