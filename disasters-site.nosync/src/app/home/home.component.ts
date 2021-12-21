@@ -18,7 +18,7 @@ import { ViewportScroller } from '@angular/common';
           overview of the past and current disaster situation in the country. Technological disasters are omitted from this analysis.
           When using data or figures displayed in the EM-DAT Atlas, please use appropriate sourcing:
           EM-DAT, CRED / UCLouvain, Brussels, Belgium, www.emdat.be (D. Guha-Sapir)
-          Press the "Discover" button   
+          Press the "Begin the story" button   
           </p>
           <div class="box has-text-centered">
           <button class="button is-outlined" (click)="onClickScroll('banner')">Begin the story</button>
@@ -57,6 +57,12 @@ import { ViewportScroller } from '@angular/common';
             left: 50%;
             margin-top: -45px;
         }
+      @media(max-width: 800px) {
+        .container p {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+}
     `
   ]
 })
