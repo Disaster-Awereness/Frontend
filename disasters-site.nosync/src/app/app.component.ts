@@ -5,6 +5,8 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `
   
+  <app-navbar></app-navbar>
+
   <!--Header-->
   <app-header></app-header>
 
@@ -19,6 +21,8 @@ import { Component } from '@angular/core';
 
   <!--Map section below -->
   <app-map></app-map>
+
+  <app-cards></app-cards>
 
 
 
