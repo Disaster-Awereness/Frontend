@@ -11,6 +11,8 @@ import { HomeComponent } from './home/home.component';
 import { MapComponent } from './map/map.component';
 import { BannerComponent } from './banner/banner.component';
 import { IntroductionComponent } from './introduction/introduction.component';
+import { CardsComponent } from './cards/cards.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { IntroductionComponent } from './introduction/introduction.component';
     HomeComponent,
     MapComponent,
     BannerComponent,
-    IntroductionComponent
+    IntroductionComponent,
+    CardsComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
