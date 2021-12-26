@@ -13,6 +13,7 @@ import { BannerComponent } from './banner/banner.component';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { CardsComponent } from './cards/cards.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SummaryComponent } from './summary/summary.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     BannerComponent,
     IntroductionComponent,
     CardsComponent,
-    NavbarComponent
+    NavbarComponent,
+    SummaryComponent
   ],
   imports: [
     BrowserModule,

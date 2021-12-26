@@ -4,16 +4,22 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-    <!--Header-->
+  <!--Header-->
   <app-header></app-header>
 
   <!--Routes injected here!-->
   <router-outlet></router-outlet>
 
+  <!--Summary-->
+  <app-summary></app-summary>
+
+  <!--Banner-->
   <app-banner></app-banner>
 
+  <!--Introduction-->
   <app-introduction></app-introduction>
 
+  <!--Cards-->
   <app-cards></app-cards>
 
   <!--Footer-->
