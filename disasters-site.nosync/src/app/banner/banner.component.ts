@@ -13,10 +13,7 @@ import { bufferToggle } from 'rxjs';
   `,
   styles: [`
   .section {
-    background-color: #F0F8FF;
-  }
-  .title {
-    font-family: "Times New Roman";
+    background-color: #E3F2FD;
   }
   .banner {
     padding: 10px;

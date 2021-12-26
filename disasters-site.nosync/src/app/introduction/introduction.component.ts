@@ -31,11 +31,6 @@ import { Component, OnInit } from '@angular/core';
       padding: 80px;
       margins: 0px;
     }
-    .column p {
-      letter-spacing: 0.2px;
-      line-height: 22px;
-      margin-bottom: 30px;
-    }
     `
   ]
 })

@@ -7,11 +7,11 @@ import { ViewportScroller } from '@angular/common';
     <section class="hero is-primary is-fullheight is-bold">
       <div class="hero-body">
         <div class="container">
-          <p class="title has-text-centered">
+          <h1 class="title has-text-centered">
             The EM-DAT Atlas
             The Georeferenced Emergency Events Database (EM-DAT)
             Centre for Research on the Epidemiology of Disasters (CRED)
-          </p>
+          </h1>
           <p class="subtitle has-text-centered">
           The aim of the online EM-DAT atlas is to show a first overview of how geo-referenced EM-DAT data can be mapped.
           Twelve countries have their natural disasters mapped and for each country the maps are accompanied by an 
@@ -23,14 +23,13 @@ import { ViewportScroller } from '@angular/common';
           <div class="box has-text-centered">
           <button class="button is-outlined" (click)="onClickScroll('banner')">Begin the story</button>
           </div>
-          <div class = "vertical"></div>
         </div>
       </div>
     </section>
   `,
   styles: [
     ` .hero {
-        background-image: url('/assets/img/hero-background.jpg') !important;
+        background-image: url('/assets/img/volcano.jpg') !important;
         background-size: cover;
         background-position: center center;
       }
@@ -50,13 +49,6 @@ import { ViewportScroller } from '@angular/common';
         letter-spacing: 0.6px;
         line-height: 36px;
       }
-      .vertical {
-            border-left: 1px solid white;
-            height: 100px;
-            position:absolute;
-            left: 50%;
-            margin-top: -45px;
-        }
       @media(max-width: 800px) {
         .container p {
         margin-left: 20px;
