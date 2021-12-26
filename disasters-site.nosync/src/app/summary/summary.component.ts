@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-summary',
@@ -13,11 +15,20 @@ import { Component, OnInit } from '@angular/core';
             <ul style="list-style-type:disc;">
               <li>Earthquakes kill xxx people yearly nibh tortor id
                   aliquet lectus proin nibh nisl condimentum id venenatis
-                  a condimentum vitae sapien</li><a href="#introduction">jump to section</a>
-              <li>Earthquakes are consequence of tectonic movements nibh tortor id aliquet lectus proin nibh nisl condimentum id venenatis a condimentum vitae sapien</li>
-              <li>Most active earthquake areas are Indoensia etc. nibh tortor id aliquet lectus proin nibh nisl condimentum id venenatis a condimentum vitae sapien</li>
-              <li>Strongest earthquake recorded was nibh tortor id aliquet lectus proin nibh nisl condimentum id venenatis a condimentum vitae sapien</li>
-              <li>nibh tortor id aliquet lectus proin nibh nisl condimentum id venenatis a condimentum vitae sapien</li>
+                  a condimentum vitae sapien</li>
+                  <a href="#introduction"><fa-icon [icon]="faAngleDoubleDown"></fa-icon>Jump to section</a>
+              <li>Earthquakes are consequence of tectonic movements nibh tortor id aliquet
+                  lectus proin nibh nisl condimentum id venenatis a condimentum vitae sapien</li>
+                  <a href="#introduction"><fa-icon [icon]="faAngleDoubleDown"></fa-icon>Jump to section</a>
+              <li>Most active earthquake areas are Indoensia etc. nibh tortor id aliquet lectus proin
+                  nibh nisl condimentum id venenatis a condimentum vitae sapien</li>
+                  <a href="#introduction"><fa-icon [icon]="faAngleDoubleDown"></fa-icon>Jump to section</a>
+              <li>Strongest earthquake recorded was nibh tortor id aliquet lectus proin nibh nisl
+                  condimentum id venenatis a condimentum vitae sapien</li>
+                  <a href="#introduction"><fa-icon [icon]="faAngleDoubleDown"></fa-icon>Jump to section</a>
+              <li>nibh tortor id aliquet lectus proin nibh nisl condimentum id venenatis a
+                  condimentum vitae sapien</li>
+                  <a href="#introduction"><fa-icon [icon]="faAngleDoubleDown"></fa-icon>Jump to section</a>
             </ul>
           </div>
         </div>
@@ -36,6 +47,8 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class SummaryComponent implements OnInit {
+
+  faAngleDoubleDown = faAngleDoubleDown
 
   constructor() { }
 

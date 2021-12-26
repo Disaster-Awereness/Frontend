@@ -14,6 +14,7 @@ import { IntroductionComponent } from './introduction/introduction.component';
 import { CardsComponent } from './cards/cards.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SummaryComponent } from './summary/summary.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { SummaryComponent } from './summary/summary.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FontAwesomeModule,
   ],
   providers: [
     MarkerService,

@@ -53,6 +53,7 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
+              "../node_modules/font-awesome/fonts",
               {
                 "glob": "**/*",
                 "input": "node_modules/leaflet/dist/images/",

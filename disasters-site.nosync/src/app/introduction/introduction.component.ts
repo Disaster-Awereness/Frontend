@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   <section class="section is-medium" id="introduction">
     <div class="columns">
       <div class="column is-two-fifths">
+      <div class="content">
       <p>
         The number of deaths from natural disasters can be highly variable from year-to-year; some years pass with very few deaths before a large disaster event claims many lives.
         If we look at the average over the past decade, approximately 60,000 people globally died from natural disasters each year. This represents 0.1% of global deaths.
@@ -18,6 +19,7 @@ import { Component, OnInit } from '@angular/core';
         Low-frequency, high-impact events such as earthquakes and tsunamis are not preventable, but such high losses of human life are. We know from historical data that the world has seen a significant reduction in disaster deaths through earlier prediction, more resilient infrastructure, emergency preparedness, and response systems.
         Those at low incomes are often the most vulnerable to disaster events: improving living standards, infrastructure and response systems in these regions will be key to preventing deaths from natural disasters in the coming decades.
       </p>
+      </div>
       </div>
     <div class="column">
     <app-map></app-map>
