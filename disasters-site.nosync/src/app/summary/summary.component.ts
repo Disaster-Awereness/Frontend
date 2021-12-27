@@ -43,6 +43,14 @@ import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
     ul {
       margin-left: 2rem;
     }
+
+    .card {
+      background-color: #FFF8E1;
+      border-left-style: solid;
+      border-width: 3px;
+      border-color: #1565C0;
+    }
+
     `
   ]
 })

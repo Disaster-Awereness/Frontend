@@ -12,7 +12,13 @@ import { Component, OnInit } from '@angular/core';
       </div>
     </div>
   `,
-  styles: [
+  styles: [`
+  .navbar {
+    /*Keeps navbar fixed and full width */
+    position: fixed;
+    width: 100%;
+  }
+  `
   ]
 })
 export class HeaderComponent implements OnInit {
