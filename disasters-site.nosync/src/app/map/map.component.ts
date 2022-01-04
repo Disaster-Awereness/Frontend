@@ -3,10 +3,6 @@ import * as L from 'leaflet';
 import 'mapbox-gl-leaflet';
 import { MarkerService } from '../marker.service';
 
-const iconRetinaUrl = 'assets/marker-icon-2x.png';
-const iconUrl = 'assets/marker-icon.png';
-const shadowUrl = 'assets/marker-shadow.png';
-
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
@@ -28,13 +24,25 @@ export class MapComponent implements AfterViewInit {
     //Set tile options for basemap.
     const tiles = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYmVuYnVjaGVuYXUiLCJhIjoiY2tvdHRoZDJ0MGVybTJybGxtcHQwMXViZSJ9.JaW_435Cnt_dk1WXzFzajg', {
       attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-      maxZoom: 0,
-      minZoom: 1,
+      maxZoom: 8,
+      minZoom: 2,
       id: 'mapbox/light-v10',
       accessToken: 'pk.eyJ1IjoiYmVuYnVjaGVuYXUiLCJhIjoiY2tvdHRoZDJ0MGVybTJybGxtcHQwMXViZSJ9.JaW_435Cnt_dk1WXzFzajg'
     });
 
     tiles.addTo(this.map);
+
+    const legend = new L.Control({position: 'bottomleft'});
+
+    legend.onAdd = function (map) {
+      var div = L.DomUtil.create('div', 'info legend'),
+      grades= [0, 100],
+      labels = [0, 100];
+      div.innerHTML += '<div>LEGEND</div>'
+      return div;
+    }
+
+    legend.addTo(this.map);
   }
 
   constructor(private markerService: MarkerService) { }
