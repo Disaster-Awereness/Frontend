@@ -51,6 +51,9 @@ import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
       border-color: #1565C0;
     }
 
+    .section {
+      background-color: #ECEFF1;
+    }
     `
   ]
 })

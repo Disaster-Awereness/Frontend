@@ -13,7 +13,7 @@ import { bufferToggle } from 'rxjs';
   `,
   styles: [`
   .section {
-    background-color: #E3F2FD;
+    background-color: #BBDEFB;
   }
   .banner {
     padding: 10px;
