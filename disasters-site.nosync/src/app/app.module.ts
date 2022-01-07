@@ -15,7 +15,7 @@ import { CardsComponent } from './cards/cards.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SummaryComponent } from './summary/summary.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { MenuComponent } from './menu/menu.component';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +29,6 @@ import { MenuComponent } from './menu/menu.component';
     CardsComponent,
     NavbarComponent,
     SummaryComponent,
-    MenuComponent
   ],
   imports: [
     BrowserModule,
