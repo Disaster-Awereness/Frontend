@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   template: `
   <!--Header-->
   <app-header></app-header>
-
+ 
   <!--Routes injected here!-->
   <router-outlet></router-outlet>
 
@@ -18,6 +18,9 @@ import { Component } from '@angular/core';
 
   <!--Introduction-->
   <app-introduction></app-introduction>
+
+  <!--tiles-->
+  <app-tiles></app-tiles>
 
   <!--Cards-->
   <app-cards></app-cards>

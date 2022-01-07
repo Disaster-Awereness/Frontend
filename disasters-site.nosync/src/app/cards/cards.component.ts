@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
 <section class="hero is-link py-4">
     <div class="hero-body">
         <p class="title">
-            Reactions
+            Earthquake safety
         </p>
         <p class="subtitle">
-            Lorem dolor pisum sit amet
+            To stay safe before, during & after an earthquake, review the following tips
         </p>
     </div>
 </section>
@@ -21,7 +21,7 @@ import { Component, OnInit } from '@angular/core';
             <div class="card">
                 <header class="card-header">
                     <p class="card-header-title">
-                        New reaction
+                        Before an earthquake
                     </p>
                     <div class="card-header-icon">
                         <span class="icon">
@@ -31,7 +31,7 @@ import { Component, OnInit } from '@angular/core';
                 </header>
                 <div class="card-image">
                     <figure class="image is-4by3">
-                        <img src='/assets/img/Disaster_awareness.png' style="border-radius: 50%;" width="100" />
+                        <img src='/assets/img/Before_Earthquake.png' style="border-radius: 0px;" width="50" />
                     </figure>
                 </div>
                 <div class="card-content">
@@ -48,7 +48,7 @@ import { Component, OnInit } from '@angular/core';
             <div class="card">
                 <header class="card-header">
                     <p class="card-header-title">
-                        New reaction
+                        During an earthquake
                     </p>
                     <div class="card-header-icon">
                         <span class="icon">
@@ -58,7 +58,7 @@ import { Component, OnInit } from '@angular/core';
                 </header>
                 <div class="card-image">
                     <figure class="image is-4by3">
-                        <img src='/assets/img/Disaster_awareness.png' style="border-radius: 50%;" width="100" />
+                        <img src='/assets/img/During_Earthquake.png' style="border-radius: 0px;" width="50" />
                     </figure>
                 </div>
                 <div class="card-content">
@@ -75,7 +75,7 @@ import { Component, OnInit } from '@angular/core';
             <div class="card">
                 <header class="card-header">
                     <p class="card-header-title">
-                        New reaction
+                        After an earthquake
                     </p>
                     <div class="card-header-icon">
                         <span class="icon">
@@ -85,7 +85,7 @@ import { Component, OnInit } from '@angular/core';
                 </header>
                 <div class="card-image">
                     <figure class="image is-4by3">
-                        <img src='/assets/img/Disaster_awareness.png' style="border-radius: 50%;" width="100" />
+                        <img src='/assets/img/After_Earthquake.png' style="border-radius: 0px;" width="50" />
                     </figure>
                 </div>
                 <div class="card-content">
