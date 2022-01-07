@@ -63,10 +63,14 @@
               "node_modules/bulma/css/bulma.css",
               "node_modules/leaflet/dist/leaflet.css",
               "node_modules/mapbox-gl/dist/mapbox-gl.css",
-              "node_modules/angular-fontawesome/dist/angular-fontawesome.js",
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/bootstrap/scss/bootstrap.scss"     
+              
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/angular-fontawesome/dist/angular-fontawesome.js",
+              "node_modules/apexcharts/dist/apexcharts.min.js"
+            ]
           },
           "configurations": {
             "production": {
