@@ -1,3 +1,4 @@
+import { Color } from 'ng2-charts';
 import { Component, OnInit } from '@angular/core';
 import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
 
@@ -46,9 +47,9 @@ import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
 
     .card {
       background-color: #FFF8E1;
-      border-left-style: solid;
-      border-width: 3px;
-      border-color: #1565C0;
+      border-left: 3px solid;
+      border-left-color: #1565C0;
+
     }
 
     .section {
