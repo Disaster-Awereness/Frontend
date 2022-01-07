@@ -3,10 +3,6 @@ import * as L from 'leaflet';
 import 'mapbox-gl-leaflet';
 import { MarkerService } from '../marker.service';
 
-const iconRetinaUrl = 'assets/marker-icon-2x.png';
-const iconUrl = 'assets/marker-icon.png';
-const shadowUrl = 'assets/marker-shadow.png';
-
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
@@ -35,6 +31,18 @@ export class MapComponent implements AfterViewInit {
     });
 
     tiles.addTo(this.map);
+
+    const legend = new L.Control({position: 'bottomleft'});
+
+    legend.onAdd = function (map) {
+      var div = L.DomUtil.create('div', 'info legend'),
+      grades= [0, 100],
+      labels = [0, 100];
+      div.innerHTML += '<div>LEGEND</div>'
+      return div;
+    }
+
+    legend.addTo(this.map);
   }
 
   constructor(private markerService: MarkerService) { }
