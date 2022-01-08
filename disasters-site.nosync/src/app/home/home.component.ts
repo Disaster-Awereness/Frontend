@@ -69,6 +69,9 @@ import { ViewportScroller } from '@angular/common';
         color: white;
       }
       @media(max-width: 800px) {
+        .container {
+          margin-top: 50px;
+        }
         .container p {
         margin-left: 20px;
         margin-right: 20px;
