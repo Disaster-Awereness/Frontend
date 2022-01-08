@@ -47,7 +47,15 @@ import { EqPerHourComponent } from './tiles_graphics/eq-per-hour/eq-per-hour.com
 import { TreeEqCountryComponent } from './tiles_graphics/tree-eq-country/tree-eq-country.component';
 import { MagEqBarComponent } from './tiles_graphics/mag-eq-bar/mag-eq-bar.component';
 import { LineDataFullComponent } from './tiles_graphics/line-data-full/line-data-full.component';
-import { HeatAffectedFullComponent } from './tiles_graphics/heat-affected-full/heat-affected-full.component'
+import { HeatAffectedFullComponent } from './tiles_graphics/heat-affected-full/heat-affected-full.component';
+import { DefinitionComponent } from './definition/definition.component';
+import { ByCountryComponent } from './by-country/by-country.component';
+import { ConsequencesComponent } from './consequences/consequences.component';
+import { HistoryComponent } from './history/history.component';
+import { DidYouKnowComponent } from './did-you-know/did-you-know.component';
+import { SafetyComponent } from './safety/safety.component';
+import { TopCountriesComponent } from './top-countries/top-countries.component';
+
 
 // Add dependencies to FusionChartsModule
 FusionChartsModule.fcRoot(FusionCharts, Charts, Fusion, Maps, World, FusionTheme)
@@ -77,7 +85,14 @@ FusionChartsModule.fcRoot(FusionCharts, Charts, Fusion, Maps, World, FusionTheme
     TreeEqCountryComponent,
     MagEqBarComponent,
     LineDataFullComponent,
-    HeatAffectedFullComponent
+    HeatAffectedFullComponent,
+    DefinitionComponent,
+    ByCountryComponent,
+    ConsequencesComponent,
+    HistoryComponent,
+    DidYouKnowComponent,
+    SafetyComponent,
+    TopCountriesComponent,
   ],
   imports: [
     BrowserModule,

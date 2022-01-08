@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-introduction',
+  selector: 'app-top-countries',
   template: `
-  <section class="section is-medium" id="introduction">
+    <section class="section is-medium" id="introduction">
     <div class="columns">
       <div class="column is-two-fifths">
       <div class="content">
@@ -27,16 +27,15 @@ import { Component, OnInit } from '@angular/core';
     </div>
   </section>
   `,
-  styles: [
-    `
-    .section {
-      padding: 80px;
-      margins: 0px;
-    }
-    `
+  styles: [`
+  .section {
+    padding: 80px;
+    margins: 0px;
+  }
+  `
   ]
 })
-export class IntroductionComponent implements OnInit {
+export class TopCountriesComponent implements OnInit {
 
   constructor() { }
 

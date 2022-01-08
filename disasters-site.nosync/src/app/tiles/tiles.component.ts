@@ -101,8 +101,7 @@ import { Component, OnInit } from '@angular/core';
     </div>
 </section>
   `,
-  styles: [
-  ]
+  styles: []
 })
 export class TilesComponent implements OnInit {
 

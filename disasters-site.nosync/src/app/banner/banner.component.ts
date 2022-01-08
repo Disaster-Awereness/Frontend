@@ -6,7 +6,7 @@ import { bufferToggle } from 'rxjs';
   template: `
   <section class="section" id="banner">
     <div class="banner">
-      <h1 class="title">Natural disasters kill on average 60,000 people per year and are responsible for 0.1% of global deaths
+      <h1 class="title"><ng-content></ng-content>
       </h1>
     </div>
   </section>
