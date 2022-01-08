@@ -4,6 +4,10 @@ import 'mapbox-gl-leaflet';
 import * as $ from 'jquery/dist/jquery.min.js';
 import { MarkerService } from '../marker.service';
 
+const iconRetinaUrl = 'assets/marker-icon-2x.png';
+const iconUrl = 'assets/marker-icon.png';
+const shadowUrl = 'assets/marker-shadow.png';
+
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
