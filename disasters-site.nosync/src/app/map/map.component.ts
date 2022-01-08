@@ -1,6 +1,7 @@
 import { Component, AfterViewInit } from '@angular/core';
 import * as L from 'leaflet';
 import 'mapbox-gl-leaflet';
+// @ts-ignore
 import * as $ from 'jquery/dist/jquery.min.js';
 import { MarkerService } from '../marker.service';
 
@@ -38,7 +39,7 @@ export class MapComponent implements AfterViewInit {
     tiles.addTo(this.map);
 
     //Load plate tectonics GeoJSON from Github.
-    $.getJSON("https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json", (response) => {
+    $.getJSON("https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json", (response:any) => {
       console.log("response", response);
       var tectonicPlates = new L.GeoJSON(response);
       tectonicPlates.setStyle({

@@ -22,7 +22,7 @@ import { Component, OnInit } from '@angular/core';
   </div>
       </div>
     <div class="column">
-    <app-map></app-map>
+    <app-choropleth></app-choropleth>
     </div>
     </div>
   </section>

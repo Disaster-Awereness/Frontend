@@ -55,6 +55,7 @@ import { HistoryComponent } from './history/history.component';
 import { DidYouKnowComponent } from './did-you-know/did-you-know.component';
 import { SafetyComponent } from './safety/safety.component';
 import { TopCountriesComponent } from './top-countries/top-countries.component';
+import { ChoroplethComponent } from './choropleth/choropleth.component';
 
 
 // Add dependencies to FusionChartsModule
@@ -93,6 +94,7 @@ FusionChartsModule.fcRoot(FusionCharts, Charts, Fusion, Maps, World, FusionTheme
     DidYouKnowComponent,
     SafetyComponent,
     TopCountriesComponent,
+    ChoroplethComponent,
   ],
   imports: [
     BrowserModule,
