@@ -17,6 +17,7 @@ import { Component, OnInit } from '@angular/core';
     /*Keeps navbar fixed and full width */
     position: fixed;
     width: 100%;
+    z-index: 2000;
   }
   `
   ]
