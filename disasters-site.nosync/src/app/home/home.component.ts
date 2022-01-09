@@ -5,6 +5,7 @@ import { ViewportScroller } from '@angular/common';
   selector: 'app-home',
   template: `
     <section class="hero is-medium is-bold">
+    <app-hamburger></app-hamburger>
       <div class="hero-body">
         <div class="container">
           <h1 class="title has-text-centered">

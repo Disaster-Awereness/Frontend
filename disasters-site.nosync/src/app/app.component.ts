@@ -3,11 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-  <!--Header-->
-  <app-header></app-header>
- 
-  <!--Routes injected here!-->
-  <router-outlet></router-outlet>
+  <!--Home-->
+  <app-home></app-home>
 
   <!--Summary-->
   <app-summary></app-summary>

@@ -3,11 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-header',
   template: `
-    <div class="navbar is-black">
+    <div class="navbar">
       <div class="navbar-brand">
         <a class="navbar-item">
-        <span style='font-size:20px;'>&#10170;</span>
-        &nbsp;Natural Disasters Dashboard 
+        
         </a>
       </div>
     </div>
@@ -15,9 +14,9 @@ import { Component, OnInit } from '@angular/core';
   styles: [`
   .navbar {
     /*Keeps navbar fixed and full width */
+    background-color: transparent;
     position: fixed;
     width: 100%;
-    z-index: 2000;
   }
   `
   ]

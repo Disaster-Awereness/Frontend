@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-did-you-know',
   template: `
-    <section class="section is-medium" id="introduction">
+    <section class="section is-medium" id="didyouknow">
     <div class="columns">
       <div class="column is-two-fifths">
       <div class="content">
