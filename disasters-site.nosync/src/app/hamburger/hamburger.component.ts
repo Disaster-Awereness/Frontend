@@ -48,7 +48,7 @@ import { Component, OnInit } from '@angular/core';
   width: 26px;
   height: 26px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 2;
 }
 .menu__btn > span,
 .menu__btn > span::before,
@@ -81,6 +81,8 @@ import { Component, OnInit } from '@angular/core';
   background-color: #E3F2FD;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
   transition-duration: .25s;
+  z-index: 1;
+  border-radius: 5px;
 }
 .menu__item {
   display: block;
