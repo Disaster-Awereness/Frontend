@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as L from 'leaflet';
+import { control } from 'leaflet';
 import { FeatureCollection } from 'geojson';
 
 @Component({
@@ -14,31 +15,33 @@ import { FeatureCollection } from 'geojson';
    
   `,
   styles: [`
-    @import url("https://unpkg.com/leaflet@1.7.1/dist/leaflet.css");
+  @import url("https://unpkg.com/leaflet@1.7.1/dist/leaflet.css");
 
-    .info {
-      padding: 6px 8px;
-      font: 14px/16px Arial, Helvetica, sans-serif;
-      background: white;
-      background: rgba(255,255,255,0.8);
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
-      border-radius: 5px;
+  .info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
   }
+
   .info h4 {
-      margin: 0 0 5px;
-      color: #777;
+    margin: 0 0 5px;
+    color: #777;
   }
   
   .legend {
-      line-height: 18px;
-      color: #555;
+    line-height: 18px;
+    color: #555;
   }
+
   .legend i {
-      width: 18px;
-      height: 18px;
-      float: left;
-      margin-right: 8px;
-      opacity: 1;
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 1;
   }
 
   .map-container {
@@ -257,12 +260,12 @@ export class ChoroplethComponent implements OnInit {
 //Get the color (according to sequence from ColorBrewer) in relation to earthquakes/country size (input d). 
 function getColor(d:any) {
   return d > 1  ? '#800026' :
-       d > 0.5  ? '#BD0026' :
-       d > 0.2  ? '#E31A1C' :
-       d > 0.1  ? '#FC4E2A' :
-       d > 0.05   ? '#FD8D3C' :
-       d > 0.01   ? '#FEB24C' :
-       d > 0.005   ? '#FED976' :
+       d > 0.25  ? '#BD0026' :
+       d > 0.1  ? '#E31A1C' :
+       d > 0.05  ? '#FC4E2A' :
+       d > 0.03   ? '#FD8D3C' :
+       d > 0.02   ? '#FEB24C' :
+       d > 0.01   ? '#FED976' :
             '#FFEDA0';
 }
 
@@ -278,8 +281,7 @@ function style(feature:any) {
   };
 }
 
-/* TODO: FIGURE OUT HOW TO MAKE CONTROL WORK
-var info = new L.Control();
+var info:any = new L.Control();
 
 info.onAdd = function (mymap:any) {
   this._div = L.DomUtil.create('div', 'info'); // Create a div with a class "info".
@@ -289,27 +291,26 @@ info.onAdd = function (mymap:any) {
 
 //  Update the control based on feature properties passed.
 info.update = function (props:any) {
-  this._div.innerHTML = '<h4>No. of earthquakes by country</h4>' +  (props ?
-    '<b>' + props.name + '</b><br />' + props.eqNumber + ' people / mi<sup>2</sup>'
+  this._div.innerHTML = '<h5>No. of earthquakes by country size</h5>' +  (props ?
+    '<b>' + props.name + '</b><br />' + props.eqNumber + ' earthquakes occured here!'
     : 'Hover over a country');
 };
 
 info.addTo(mymap);
-*/
 
 var legend = new L.Control({position: 'bottomright'});
 
 legend.onAdd = function (mymap:any) {
 
   var div = L.DomUtil.create('div', 'info legend'),
-    grades = [0, 0.005, 0.01, 0.05, 0.1, 0.2, 0.5, 1],
-    labels = [];
+    grades = [0, 0.01, 0.02, 0.03, 0.05, 0.25, 0.5, 1],
+    labels = ['almost none', 'very few', 'few', 'occasionally', 'common', 'more common', 'frequent', 'very frequent'];
 
   // loop through our intervals and generate a label with a colored square for each interval
   for (var i = 0; i < grades.length; i++) {
     div.innerHTML +=
-      '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
-      grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
+      '<span style="height:0.8em; width:0.8em; background-color:' + getColor(grades[i]) + '; border-radius:50%; display: inline-block"></span>' 
+      + '&emsp;' + labels[i] + '<br>';
   }
   return div;
 };
@@ -332,17 +333,13 @@ function highlightFeature(e:any) {
   if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
     layer.bringToFront();
   }
-  /*
   info.update(layer.feature.properties);
-  */
 }
 
 //Reset layer style to default state.
 function resetHighlight(e:any) {
   geojson.resetStyle(e.target);
-  /*
   info.update();
-  */
 }
 
 //Zooming to country on click.
