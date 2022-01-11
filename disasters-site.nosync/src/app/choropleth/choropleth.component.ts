@@ -46,7 +46,7 @@ import { FeatureCollection } from 'geojson';
 
   .map-container {
     position: relative;
-    height: 80%;
+    height: 100%;
     width: 100%;
     top: 0;
     left: 0;

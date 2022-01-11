@@ -22,7 +22,7 @@ import { Component, OnInit } from '@angular/core';
   </div>
       </div>
     <div class="column">
-    <app-map></app-map>
+    <img src="/assets/img/earthquake_diagram.png" alt="How do earthquakes form?" width="80%" height="80%" style="float:right">
     </div>
     </div>
   </section>
