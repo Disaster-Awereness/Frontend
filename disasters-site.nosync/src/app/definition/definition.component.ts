@@ -8,19 +8,20 @@ import { Component, OnInit } from '@angular/core';
       <div class="column is-two-fifths">
       <div class="content">
       <p>
-        The number of deaths from natural disasters can be highly variable from year-to-year; some years pass with very few deaths before a large disaster event claims many lives.
-        If we look at the average over the past decade, approximately 60,000 people globally died from natural disasters each year. This represents 0.1% of global deaths.
+      In a general look, we can say that earthquake is the sudden movement of the Earth that creates the shakes on the ground. In the scientific defination we can say that earthquake occure because of the sudden movement or trembling of the Earth's tectonic plates and creates shakes on the earth surface. This shakes can destroy buildings and break the Earth's surface. If we think the movement on the underwater, that causes the tsunami.
       </p>
       <p>
-        In the visualizations shown here we see the annual variability in the number and share of deaths from natural disasters in recent decades.
-        What we see is that in many years, the number of deaths can be very low – often less than 10,000, and accounting for as low as 0.01% of total deaths. But we also see the devastating impact of shock events: the 1983-85 famine and drought in Ethiopia; the 2004 Indian Ocean earthquake and tsunami; Cyclone Nargis which struck Myanmar in 2008; and the 2010 Port-au-Prince earthquake in Haiti. All of these events pushed global disasters deaths over 200,000 – more than 0.4% of deaths in these years.
+      Although the Earth looks like a pretty solid place from the surface, it’s actually extremely active just below the surface. The Earth is made of four basic layers: a solid crust, a hot, nearly solid mantle, a liquid outer core and a solid inner core.
+      The solid crust and top, stiff layer of the mantle make up a region called the lithosphere. The lithosphere isn’t a continuous piece that wraps around the whole Earth like an eggshell. It’s actually made up of giant puzzle pieces called tectonic plates. Tectonic plates are constantly shifting as they drift around on the viscous, or slowly flowing, mantle layer below.
+      This non-stop movement causes stress on Earth’s crust. When the stresses get too large, it leads to cracks called faults. When tectonic plates move, it also causes movements at the faults. An earthquake is the sudden movement of Earth’s crust at a fault line.
+      The location where an earthquake begins is called the epicenter. An earthquake’s most intense shaking is often felt near the epicenter. However, the vibrations from an earthquake can still be felt and detected hundreds, or even thousands of miles away from the epicenter.
       </p>
       <p>
-        Low-frequency, high-impact events such as earthquakes and tsunamis are not preventable, but such high losses of human life are. We know from historical data that the world has seen a significant reduction in disaster deaths through earlier prediction, more resilient infrastructure, emergency preparedness, and response systems.
-        Those at low incomes are often the most vulnerable to disaster events: improving living standards, infrastructure and response systems in these regions will be key to preventing deaths from natural disasters in the coming decades.
+      The energy from an earthquake travels through Earth in vibrations called seismic waves. Scientists can measure these seismic waves on instruments called seismometer. A seismometer detects seismic waves below the instrument and records them as a series of zig-zags.
+      Scientists can determine the time, location and intensity of an earthquake from the information recorded by a seismometer. This record also provides information about the rocks the seismic waves traveled through.
       </p>
   </div>
-      </div>
+    </div>
     <div class="column">
     <img src="/assets/img/earthquake_diagram.png" alt="How do earthquakes form?" width="80%" height="80%" style="float:right">
     </div>
