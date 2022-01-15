@@ -197,11 +197,6 @@ import { Component, OnInit } from '@angular/core';
       </div>
 
     </div>
-        <div class="column">
-    <app-multi-chart-cons></app-multi-chart-cons>
-    </div>
-    
-    <app-dethby-year-line></app-dethby-year-line>
 
   </section>
   `,
