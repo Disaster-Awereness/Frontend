@@ -37,7 +37,7 @@ import { Component, OnInit } from '@angular/core';
 
       <p>
       Additionally, in the early-to-mid 20th century, the annual death toll from earthquakes was high, often reaching over one million per year. In recent decades we have seen a substantial decline in numbers of injured, homeless, affected and deaths.
-      This decline is impressive if we consider the current rate of population growth over this period. Nonetheless, it may be explained by the  
+      This decline is impressive if we consider the current rate of population growth over this period. Nonetheless, it may be explained by the preparation and measurements taken by countries, the arise of aweraness in the community and the improvement in infraestructure.  
       </p>
       <br>
       <p>
