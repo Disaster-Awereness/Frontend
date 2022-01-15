@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
+import { monkeyPatchChartJsLegend } from 'ng2-charts';
+import { TopCountriesComponent } from './../top-countries/top-countries.component';
+import { Affected } from './../tiles_graphics/line-data-full/data';
+import { Component, OnInit, Injectable } from '@angular/core';
 
 @Component({
   selector: 'app-introduction',
@@ -8,16 +12,34 @@ import { Component, OnInit } from '@angular/core';
       <div class="column is-two-fifths">
       <div class="content">
       <p>
-        The number of deaths from natural disasters can be highly variable from year-to-year; some years pass with very few deaths before a large disaster event claims many lives.
-        If we look at the average over the past decade, approximately 60,000 people globally died from natural disasters each year. This represents 0.1% of global deaths.
+        Among all of the natural disasters, earthquakes may be the one
+        which comes most unexpectedly and leaves the people in affected 
+        area the least time to prepare. Unlike fires or destructive weather,
+        it can't be seen from a distance nor it can be accurately predicted.
+        The nature of their existence has been unknown until recently. Native
+        peoples around the world had different explanation for earth tremors,
+        which was usually described by movement of giant animal on which Earth's
+        surface rests; in Japan it was a catfish, in China a frog and in Philippines 
+        a snake, while native Americans thought it to be a turtle.
+
       </p>
       <p>
-        In the visualizations shown here we see the annual variability in the number and share of deaths from natural disasters in recent decades.
-        What we see is that in many years, the number of deaths can be very low – often less than 10,000, and accounting for as low as 0.01% of total deaths. But we also see the devastating impact of shock events: the 1983-85 famine and drought in Ethiopia; the 2004 Indian Ocean earthquake and tsunami; Cyclone Nargis which struck Myanmar in 2008; and the 2010 Port-au-Prince earthquake in Haiti. All of these events pushed global disasters deaths over 200,000 – more than 0.4% of deaths in these years.
+        First scientifically sensible idea about processes which lead to 
+        earthquakes came from John Michell in 1760. while he studied great
+        Lisbon earthquake of 1755. Michell concluded earthquakes are caused
+        by shifting of rock masses many kilometers deep inside Earth's surface.
+        That idea was further developed by Benjamin Franklin in 1793. He imagined
+        internal part of Earth to be more fluid, while the surface was akin
+        to a hard shell moving on the top liquid inside. It wasn't until 1891. when
+        strong earthquake hit Japanese island of Honshu, and created a fault line,
+        making the japanese scientist Bunjiro Koto finally concluded that earthquakes
+        are caused by collision of parts of Earth's crust.
       </p>
       <p>
-        Low-frequency, high-impact events such as earthquakes and tsunamis are not preventable, but such high losses of human life are. We know from historical data that the world has seen a significant reduction in disaster deaths through earlier prediction, more resilient infrastructure, emergency preparedness, and response systems.
-        Those at low incomes are often the most vulnerable to disaster events: improving living standards, infrastructure and response systems in these regions will be key to preventing deaths from natural disasters in the coming decades.
+        Later during the course of the 20th century, scientists have managed to use seismic
+        waves in order to find out more about earthquakes. They deducted that Earth has melted 
+        core in the center, surrounded by somewhat less dense material which comprises the "mantle"
+        and on top of the mantle is thin rocky layer called "crust" on which we humans live.
       </p>
   </div>
       </div>

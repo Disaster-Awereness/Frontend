@@ -9,17 +9,16 @@ import { ViewportScroller } from '@angular/common';
       <div class="hero-body">
         <div class="container">
           <h1 class="title has-text-centered">
-            The EM-DAT Atlas
-            The Georeferenced Emergency Events Database (EM-DAT)
-            Centre for Research on the Epidemiology of Disasters (CRED)
+            Earthquakes Atlas
+          </h1>
+          <h1 class="subtitle has-text-centered">
+          (1900.-2021.)
           </h1>
           <p class="subtitle has-text-centered">
-          The aim of the online EM-DAT atlas is to show a first overview of how geo-referenced EM-DAT data can be mapped.
-          Twelve countries have their natural disasters mapped and for each country the maps are accompanied by an 
-          overview of the past and current disaster situation in the country. Technological disasters are omitted from this analysis.
-          When using data or figures displayed in the EM-DAT Atlas, please use appropriate sourcing:
-          EM-DAT, CRED / UCLouvain, Brussels, Belgium, www.emdat.be (D. Guha-Sapir)
-          Press the "Begin the story" button   
+          The aim of this one-page atlas is to provide students with overview of
+          earthquakes; how they came to be, how they affect us and where are they
+          located. Data on display starts in the year 1900.  Before that year, data is
+          scarce and inconsistent.
           </p>
           <div class="box has-text-centered">
           <button class="button is-outlined" (click)="onClickScroll('banner')">Begin the story</button>

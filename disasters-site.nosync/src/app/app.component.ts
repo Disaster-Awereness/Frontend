@@ -10,7 +10,8 @@ import { Component } from '@angular/core';
   <app-summary></app-summary>
 
   <!--Banner for introduction-->
-  <app-banner>Natural disasters kill x people per year</app-banner>
+  <app-banner>First person to come up with scientifict explanation of earthquakes
+     was Cambridge professor John Michell</app-banner>
 
   <!--Introduction-->
   <app-introduction></app-introduction>
