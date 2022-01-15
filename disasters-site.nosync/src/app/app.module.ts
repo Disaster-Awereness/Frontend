@@ -57,6 +57,7 @@ import { SafetyComponent } from './safety/safety.component';
 import { TopCountriesComponent } from './top-countries/top-countries.component';
 import { ChoroplethComponent } from './choropleth/choropleth.component';
 import { HamburgerComponent } from './hamburger/hamburger.component';
+import { CreditsComponent } from './credits/credits.component';
 
 
 // Add dependencies to FusionChartsModule
@@ -97,6 +98,7 @@ FusionChartsModule.fcRoot(FusionCharts, Charts, Fusion, Maps, World, FusionTheme
     TopCountriesComponent,
     ChoroplethComponent,
     HamburgerComponent,
+    CreditsComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,8 +1,4 @@
-import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
-import { monkeyPatchChartJsLegend } from 'ng2-charts';
-import { TopCountriesComponent } from './../top-countries/top-countries.component';
-import { Affected } from './../tiles_graphics/line-data-full/data';
-import { Component, OnInit, Injectable } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-introduction',

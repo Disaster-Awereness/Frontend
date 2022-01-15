@@ -64,6 +64,9 @@ import { Component } from '@angular/core';
   <!--Cards-->
   <app-cards></app-cards>
 
+  <!--Credits-->
+  <app-credits></app-credits>
+
   <!--Footer-->
   <app-footer></app-footer>
 

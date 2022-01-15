@@ -59,11 +59,12 @@ import { ViewportScroller } from '@angular/common';
       
       .container p {
         margin-bottom: 80px;
-        margin-left: 200px;
-        margin-right: 200px;
+        margin-left: 270px;
+        margin-right: 270px;
         letter-spacing: 0.6px;
         line-height: 36px;
         color: white;
+        font-weight: 200;
       }
 
       .container h1 {
