@@ -22,9 +22,6 @@ export type ChartOptions = {
 @Component({
   selector: 'app-tree-eq-country',
   template: `
-    <p>
-      tree-eq-country works!
-    </p>
     <div id="chart">
     <apx-chart
       [series]="chartOptions.series"

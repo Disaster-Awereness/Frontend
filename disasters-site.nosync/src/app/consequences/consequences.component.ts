@@ -34,6 +34,7 @@ import { Component, OnInit } from '@angular/core';
         </p>
  
       </div>
+
       </div>
   
       <div class="column is-one-fifth">
@@ -194,10 +195,14 @@ import { Component, OnInit } from '@angular/core';
           </div>
         </div>
       </div>
-          
-  
 
     </div>
+        <div class="column">
+    <app-multi-chart-cons></app-multi-chart-cons>
+    </div>
+    
+    <app-dethby-year-line></app-dethby-year-line>
+
   </section>
   `,
   styles: [`

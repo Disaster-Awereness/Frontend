@@ -5,11 +5,9 @@ import {single, multi} from './data';
 @Component({
   selector: 'app-death-cont-pie',
   template: `
-    <p>
-      death-cont-pie works!
-    </p>
-    <div class="card">
-      <div #ContainerRef class="card-body">
+  
+    <div #ContainerRef class="card">
+      <div  class="card-body">
         <ngx-charts-advanced-pie-chart
           [view]="view"
           scheme="cool"
@@ -20,7 +18,13 @@ import {single, multi} from './data';
       </div>
     </div>
   `,
-  styles: [
+  styles: [`
+    .card {
+      width: 700px;
+      height: 60%;
+      border: 2px solid grey;
+      background-color: white;
+    }`
   ]
 })
 export class DeathContPieComponent implements OnInit {
@@ -34,7 +38,7 @@ export class DeathContPieComponent implements OnInit {
     domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA']
   };
 
-  gradient = false;
+  gradient = true;
 
   constructor() {
     Object.assign(this, {single, multi})   

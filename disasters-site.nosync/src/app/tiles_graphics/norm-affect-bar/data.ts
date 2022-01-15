@@ -22,6 +22,10 @@ export var multi = [
         "value": 994074
       },
       {
+        "name": "Deaths",
+        "value": 21417
+      },
+      {
         "name": "Injuries",
         "value": 66860
       },
@@ -37,6 +41,10 @@ export var multi = [
       {
         "name": "Affected",
         "value": 32297361
+      },
+      {
+        "name": "Deaths",
+        "value": 443245
       },
       {
         "name": "Injuries",
@@ -56,6 +64,10 @@ export var multi = [
         "value": 135608292
       },
       {
+        "name": "Deaths",
+        "value": 1603235
+      },
+      {
         "name": "Injuries",
         "value": 1899644
       },
@@ -73,6 +85,10 @@ export var multi = [
         "value": 4788782
       },
       {
+        "name": "Deaths",
+        "value": 267794
+      },
+      {
         "name": "Injuries",
         "value": 58855
       },
@@ -88,6 +104,10 @@ export var multi = [
       {
         "name": "Affected",
         "value": 1264131
+      },
+      {
+        "name": "Deaths",
+        "value": 6497
       },
       {
         "name": "Injuries",

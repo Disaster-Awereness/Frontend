@@ -3,29 +3,95 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-safety',
   template: `
-    <section class="section is-medium" id="safety">
-    <div class="columns">
-      <div class="column is-two-fifths">
-      <div class="content">
-      <p>
-        The number of deaths from natural disasters can be highly variable from year-to-year; some years pass with very few deaths before a large disaster event claims many lives.
-        If we look at the average over the past decade, approximately 60,000 people globally died from natural disasters each year. This represents 0.1% of global deaths.
-      </p>
-      <p>
-        In the visualizations shown here we see the annual variability in the number and share of deaths from natural disasters in recent decades.
-        What we see is that in many years, the number of deaths can be very low – often less than 10,000, and accounting for as low as 0.01% of total deaths. But we also see the devastating impact of shock events: the 1983-85 famine and drought in Ethiopia; the 2004 Indian Ocean earthquake and tsunami; Cyclone Nargis which struck Myanmar in 2008; and the 2010 Port-au-Prince earthquake in Haiti. All of these events pushed global disasters deaths over 200,000 – more than 0.4% of deaths in these years.
-      </p>
-      <p>
-        Low-frequency, high-impact events such as earthquakes and tsunamis are not preventable, but such high losses of human life are. We know from historical data that the world has seen a significant reduction in disaster deaths through earlier prediction, more resilient infrastructure, emergency preparedness, and response systems.
-        Those at low incomes are often the most vulnerable to disaster events: improving living standards, infrastructure and response systems in these regions will be key to preventing deaths from natural disasters in the coming decades.
-      </p>
-  </div>
-      </div>
-    <div class="column">
-    <app-map></app-map>
+
+<section class="container p-5">
+    <div class="columns is-vcentered is-justify-content-space-evenly">
+        <div class="column is-one-third">
+            <div class="card">
+                <header class="card-header">
+                    <p class="card-header-title">
+                        Before an earthquake
+                    </p>
+                    <div class="card-header-icon">
+                        <span class="icon">
+                            <i class="fas fa-plus"></i>
+                        </span>
+                    </div>
+                </header>
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src='/assets/img/Before_Earthquake.png' style="border-radius: 0px;" width="50" />
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <a>Taken from:</a> <br>
+                    <a href="https://earthquake.usgs.gov/">https://earthquake.usgs.gov/</a> <br>
+                    <a>@Staysafety</a>
+                    <a href="#">#earthquakes</a>
+                    <a href="#">#USGS</a>
+                    <br />
+                    <!--time datetime="2016-1-1">16:54 PM - 6 Feb 2021</time-->
+                </div>
+            </div>
+        </div>
+        <div class="column is-one-third">
+            <div class="card">
+                <header class="card-header">
+                    <p class="card-header-title">
+                        During an earthquake
+                    </p>
+                    <div class="card-header-icon">
+                        <span class="icon">
+                            <i class="fas fa-plus"></i>
+                        </span>
+                    </div>
+                </header>
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src='/assets/img/During_Earthquake.png' style="border-radius: 0px;" width="50" />
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <a>Taken from:</a> <br>
+                    <a href="https://earthquake.usgs.gov/">https://earthquake.usgs.gov/</a> <br>
+                    <a>@Staysafety</a>
+                    <a href="#">#earthquakes</a>
+                    <a href="#">#USGS</a>
+                    <br />
+                    <!--time datetime="2016-1-1">16:54 PM - 6 Feb 2021</time-->
+                </div>
+            </div>
+        </div>
+        <div class="column is-one-third">
+            <div class="card">
+                <header class="card-header">
+                    <p class="card-header-title">
+                        After an earthquake
+                    </p>
+                    <div class="card-header-icon">
+                        <span class="icon">
+                            <i class="fas fa-plus"></i>
+                        </span>
+                    </div>
+                </header>
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src='/assets/img/After_Earthquake.png' style="border-radius: 0px;" width="50" />
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <a>Taken from:</a> <br>
+                    <a href="https://earthquake.usgs.gov/">https://earthquake.usgs.gov/</a> <br>
+                    <a>@Staysafety</a>
+                    <a href="#">#earthquakes</a>
+                    <a href="#">#USGS</a>
+                    <br />
+                    <!--time datetime="2016-1-1">16:54 PM - 6 Feb 2021</time-->
+                </div>
+            </div>
+        </div>
     </div>
-    </div>
-  </section>
+</section>
   `,
   styles: [`
   .section {

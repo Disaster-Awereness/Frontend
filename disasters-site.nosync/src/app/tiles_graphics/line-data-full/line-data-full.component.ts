@@ -9,6 +9,7 @@ import {
   ApexTitleSubtitle,
   ApexYAxis
 } from "ng-apexcharts";
+
 import { YearData, Injuries, Deaths, Homeless, Affected } from './data';
 
 export type ChartOptions = {
@@ -93,7 +94,7 @@ export class LineDataFullComponent implements OnInit {
     chart: {
       height: 350,
       type: "line",
-      stacked: false
+      stacked: true
     },
     dataLabels: {
       enabled: false
@@ -112,7 +113,7 @@ export class LineDataFullComponent implements OnInit {
     yaxis: [
       {
         axisTicks: {
-          show: false
+          show: true
         },
         axisBorder: {
           show: true,

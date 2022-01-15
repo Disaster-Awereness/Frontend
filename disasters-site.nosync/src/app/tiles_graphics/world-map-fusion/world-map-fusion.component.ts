@@ -3,9 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-world-map-fusion',
   template: `
-    <p>
-      world-map-fusion works!
-    </p>
+
     <div class="card">
       <fusioncharts
         type="world"
