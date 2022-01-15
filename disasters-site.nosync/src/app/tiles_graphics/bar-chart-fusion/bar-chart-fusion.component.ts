@@ -10,41 +10,32 @@ import { single } from './data';
     <p>
       bar-chart-fusion works!
     </p>
-    <div class="card">
-      <div #ContainerRef class="card-body">
+    <div #ContainerRef class="card">
+      <div  class="card-body">
         <ngx-charts-number-card
           [view]="view"
           [results]="single"
           [cardColor]="cardColor"
           (select)="onSelect($event)"
-          scheme = "cool"
-          (window:resize)="
-            resizeChart(ContainerRef.offsetWidth,
-              ContainerRef.offsetHeight)
-          "
-          >
+          scheme = "cool">
         </ngx-charts-number-card>
       </div>
     </div>
   `,
   styles: [
     `.card-body {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      transition: 0.3s;
-      border-radius: 10px;
-      color: #ffffff;
-      width: 200px;
-      height: 500px;
-      margin: auto;
+      border-radius: 20px;
+      background-color: orange;
+
     }`
   ]
 })
 export class BarChartFusionComponent implements OnInit {
 
   single = [];
-  view: any;
+  view: any = [171,600];
 
-  cardColor: string = '#232837';
+  cardColor: string = '#255688';
   
   constructor() {
     Object.assign(this, { single });
@@ -55,11 +46,6 @@ export class BarChartFusionComponent implements OnInit {
   }
 
   ngOnInit(): void {
-  }
-
-  /* ---- Auto resize chart ---- */
-  public resizeChart(width: number, height: number): void {
-  this.view = [width, height]
   }
 
 }

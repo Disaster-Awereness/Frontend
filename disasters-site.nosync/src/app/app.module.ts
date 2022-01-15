@@ -15,7 +15,6 @@ import { CardsComponent } from './cards/cards.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SummaryComponent } from './summary/summary.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { TilesComponent } from './tiles/tiles.component';
 import { DeathByContComponent } from './tiles_graphics/death-by-cont/death-by-cont.component';
 import { ChartsModule } from 'ng2-charts';
 import { NgApexchartsModule } from 'ng-apexcharts';
@@ -38,11 +37,9 @@ import * as Charts from 'fusioncharts/fusioncharts.charts';
 // Load fusion theme
 import * as Fusion from 'fusioncharts/themes/fusioncharts.theme.fusion';
 import { WorldMapFusionComponent } from './tiles_graphics/world-map-fusion/world-map-fusion.component';
-import { ApxlineComponent } from './tiles_graphics/apxline/apxline.component';
 import { DisAssocPieComponent } from './tiles_graphics/dis-assoc-pie/dis-assoc-pie.component';
 import { DeathContPieComponent } from './tiles_graphics/death-cont-pie/death-cont-pie.component';
 import { NormAffectBarComponent } from './tiles_graphics/norm-affect-bar/norm-affect-bar.component';
-import { TotDeathLineComponent } from './tiles_graphics/tot-death-line/tot-death-line.component';
 import { EqPerHourComponent } from './tiles_graphics/eq-per-hour/eq-per-hour.component';
 import { TreeEqCountryComponent } from './tiles_graphics/tree-eq-country/tree-eq-country.component';
 import { MagEqBarComponent } from './tiles_graphics/mag-eq-bar/mag-eq-bar.component';
@@ -58,6 +55,8 @@ import { TopCountriesComponent } from './top-countries/top-countries.component';
 import { ChoroplethComponent } from './choropleth/choropleth.component';
 import { HamburgerComponent } from './hamburger/hamburger.component';
 import { CreditsComponent } from './credits/credits.component';
+import { MultiChartConsComponent } from './tiles_graphics/multi-chart-cons/multi-chart-cons.component';
+import { DethbyYearLineComponent } from './tiles_graphics/dethby-year-line/dethby-year-line.component';
 
 
 // Add dependencies to FusionChartsModule
@@ -74,16 +73,13 @@ FusionChartsModule.fcRoot(FusionCharts, Charts, Fusion, Maps, World, FusionTheme
     CardsComponent,
     NavbarComponent,
     SummaryComponent,
-    TilesComponent,
     DeathByContComponent,
     BarChartComponent,
     BarChartFusionComponent,
     WorldMapFusionComponent,
-    ApxlineComponent,
     DisAssocPieComponent,
     DeathContPieComponent,
     NormAffectBarComponent,
-    TotDeathLineComponent,
     EqPerHourComponent,
     TreeEqCountryComponent,
     MagEqBarComponent,
@@ -99,6 +95,8 @@ FusionChartsModule.fcRoot(FusionCharts, Charts, Fusion, Maps, World, FusionTheme
     ChoroplethComponent,
     HamburgerComponent,
     CreditsComponent,
+    MultiChartConsComponent,
+    DethbyYearLineComponent,
   ],
   imports: [
     BrowserModule,

@@ -5,18 +5,16 @@ import { Color, Label } from 'ng2-charts';
 @Component({
   selector: 'app-bar-chart',
   template: `
-    <p>
-      bar-chart works!
-    </p>
-    <div style="display: block;">
-  <canvas baseChart width="100%" height="100%"
-      [datasets]="barChartData"
-      [labels]="barChartLabels"
-      [options]="barChartOptions"
-      [legend]="barChartLegend"
-      [chartType]="barChartType">
-  </canvas>
-</div>
+
+  <div style="display: block;">
+    <canvas baseChart width="100%" height="100%"
+        [datasets]="barChartData"
+        [labels]="barChartLabels"
+        [options]="barChartOptions"
+        [legend]="barChartLegend"
+        [chartType]="barChartType">
+    </canvas>
+  </div>
   `,
   styles: [
   ]
@@ -33,7 +31,7 @@ export class BarChartComponent implements OnInit {
   public barChartData = [
     //{data: [66860, 792653, 1899644, 58855, 3567], label: 'Injuries'},
     //{data: [994074, 32297361, 135608292, 4788782, 1264131], label: 'Affected'},
-    {data: [36,49,46,56,67,62,51,38,43,36,39,40,51,45,36,38,42,44,45,39,53,47,31,36], label: 'Earthquakes'}
+    {data: [36,49,46,56,67,62,51,38,43,36,39,40,51,45,36,38,42,44,45,39,53,47,31,36], label: '# Earthquakes'}
   ];
 
   constructor() { }

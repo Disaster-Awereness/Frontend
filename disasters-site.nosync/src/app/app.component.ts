@@ -41,16 +41,10 @@ import { Component } from '@angular/core';
   <app-history></app-history>
 
   <!--Banner for did-you-know-->
-  <app-banner>Did you know...</app-banner>
+  <app-banner>Did you know...?</app-banner>
 
   <!--Did you know?-->
   <app-did-you-know></app-did-you-know>
-
-  <!--Banner for safety-->
-  <app-banner>Safety</app-banner>
-
-  <!--Safety-->
-  <app-safety></app-safety>
 
   <!--Banner for top countries-->
   <app-banner>Top countries</app-banner>
@@ -58,15 +52,21 @@ import { Component } from '@angular/core';
   <!--Top countries-->
   <app-top-countries></app-top-countries>
 
-  <!--tiles-->
-  <app-tiles></app-tiles>
+  <!--Banner for safety-->
+  <app-banner>Safety
+    <p class="subtitle">
 
-  <!--Cards-->
-  <app-cards></app-cards>
+      To stay safe before, during & after an earthquake, review the following tips
+    </p>
+
+  </app-banner>
+
+  <!--Safety-->
+  <app-safety></app-safety>
 
   <!--Credits-->
   <app-credits></app-credits>
-
+  
   <!--Footer-->
   <app-footer></app-footer>
 
