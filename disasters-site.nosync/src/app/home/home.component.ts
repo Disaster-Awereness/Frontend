@@ -9,16 +9,17 @@ import { ViewportScroller } from '@angular/common';
       <div class="hero-body">
         <div class="container">
           <h1 class="title has-text-centered">
-            Earthquakes Atlas
-          </h1>
-          <h1 class="subtitle has-text-centered">
-          (1900.-2021.)
+            The Earthquake Data Dashboard for Education
           </h1>
           <p class="subtitle has-text-centered">
-          The aim of this one-page atlas is to provide students with overview of
-          earthquakes; how they came to be, how they affect us and where are they
-          located. Data on display starts in the year 1900.  Before that year, data is
-          scarce and inconsistent.
+          <br>
+          The aim of this dashboard is to enable an extensive exploration of worldwide Earthquake events by 
+          visualizing data from 1900 up to now. It is not only useful to create awareness about such kinds of 
+          natural hazards, but also for educational purposes of middle-aged to high school students. For this 
+          project, we looked at data about more than 1500 earthquakes occuring in over 200 different countries. 
+          The unterlying source is a dataset called the EM-DAT Atlas (CRED/UCLouvain, Brussels, Belgium - D. Guha-Sapir).
+          <br><br>
+          To start exploration, press the "Begin the story" button   
           </p>
           <div class="box has-text-centered">
           <button class="button is-outlined" (click)="onClickScroll('banner')">Begin the story</button>
@@ -31,7 +32,7 @@ import { ViewportScroller } from '@angular/common';
     ` .hero {
         /*Using linear gradient to make image darker */
         background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)), url("/assets/img/volcano.jpg");
+        rgba(0, 0, 0, 0.8)), url("/assets/img/earthquake_picture.webp");
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;

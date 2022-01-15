@@ -6,17 +6,22 @@ import { bufferToggle } from 'rxjs';
   template: `
   <section class="section" id="banner">
     <div class="banner">
-      <h1 class="title"><ng-content></ng-content>
-      </h1>
+      <h3 class="title">&#9432; &emsp;<ng-content></ng-content>
+      </h3>
     </div>
   </section>
   `,
   styles: [`
   .section {
-    background-color: #BBDEFB;
+    background-color: #cacfe6;
   }
   .banner {
     padding: 10px;
+    height: 6px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   `]
 })
