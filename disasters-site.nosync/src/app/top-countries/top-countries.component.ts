@@ -8,23 +8,51 @@ import { Component, OnInit } from '@angular/core';
       <div class="column is-two-fifths">
       <div class="content">
       <p>
-        The number of deaths from natural disasters can be highly variable from year-to-year; some years pass with very few deaths before a large disaster event claims many lives.
-        If we look at the average over the past decade, approximately 60,000 people globally died from natural disasters each year. This represents 0.1% of global deaths.
+      <br><br><br>
+      Over the years, at global scale, earthquakes have been a persistent human risk provocking thousands of deaths. However, human impacts from earqueakes may not be only fully captured in mortality rates. They also include, injury, homelessness, and displacement, which all have a significant impact on populations, development, poverty and resilience.
+      
+      The impacs of earthquakes on humanity can be classified as follows:
+      <p>
+      <b>Injuries:</b> number of people injured is defined as “People suffering from physical injuries, trauma or an illness requiring immediate medical assistance as a direct result of an earthquake.”
       </p>
       <p>
-        In the visualizations shown here we see the annual variability in the number and share of deaths from natural disasters in recent decades.
-        What we see is that in many years, the number of deaths can be very low – often less than 10,000, and accounting for as low as 0.01% of total deaths. But we also see the devastating impact of shock events: the 1983-85 famine and drought in Ethiopia; the 2004 Indian Ocean earthquake and tsunami; Cyclone Nargis which struck Myanmar in 2008; and the 2010 Port-au-Prince earthquake in Haiti. All of these events pushed global disasters deaths over 200,000 – more than 0.4% of deaths in these years.
+      <b>Homelessness:</b> number of people homeless is defined as “Number of people whose house is destroyed or heavily damaged and therefore need shelter after an event.”
       </p>
       <p>
-        Low-frequency, high-impact events such as earthquakes and tsunamis are not preventable, but such high losses of human life are. We know from historical data that the world has seen a significant reduction in disaster deaths through earlier prediction, more resilient infrastructure, emergency preparedness, and response systems.
-        Those at low incomes are often the most vulnerable to disaster events: improving living standards, infrastructure and response systems in these regions will be key to preventing deaths from natural disasters in the coming decades.
+      <b>Affected:</b> number of people affected is defined as “People requiring immediate assistance during a period of emergency, i.e. requiring basic survival needs such as food, water, shelter, sanitation and immediate medical assistance.”      
       </p>
+      <p>
+      <b>Deaths:</b> number of deaths is defined as "People killed immediately or as consequence of the earthquake”      
+      </p>
+      <p>
+      The number of these impacs are highly variable from year-to-year; some years pass with very few cases before a large disaster event claims many lives. Nevertheless, some years have particulary suffered more from earthquakes:
+      <a href = "https://en.wikipedia.org/wiki/List_of_earthquakes_in_1976">1976</a>, 
+      <a href = "https://en.wikipedia.org/wiki/List_of_earthquakes_in_1988">1988</a>,
+      <a href = "https://en.wikipedia.org/wiki/List_of_earthquakes_in_2004">2004</a>,
+      <a href = "https://en.wikipedia.org/wiki/List_of_earthquakes_in_2008">2008</a>,
+      <a href = "https://en.wikipedia.org/wiki/List_of_earthquakes_in_2010">2010</a>.
+      
+      What we observe is that for most countries the share of deaths from earthquakes are very low in most years. Often it can be zero with no loss of life. But we also see clearly the effects of low-frequency but high-impact events: in 2010, more than 70% of deaths in Haiti were the result of the Port-au-Prince earthquake.
+      </p>
+
+      <p>
+      Additionally, in the early-to-mid 20th century, the annual death toll from earthquakes was high, often reaching over one million per year. In recent decades we have seen a substantial decline in numbers of injured, homeless, affected and deaths.
+      This decline is impressive if we consider the current rate of population growth over this period. Nonetheless, it may be explained by the  
+      </p>
+      <br>
+      <p>
+      <b><i>Note:</i></b>
+      <i>The visualisations show the numbers reported of people affected by earthquakes. Note that the <i> available data </i> report a series of data much complete for the last decades than for the historic estimates before 1968, which show in many ocassions no data or low tendencies in comarison with recent years. This may be caused due to the lack of reports or documentation collected to populate the data.  
+      However, an increase in the number of recorded earthquakes does not mean that it was the trend over time. 
+      </i></p>
   </div>
       </div>
     <div class="column">
-    <app-map></app-map>
+    <app-multi-chart-cons></app-multi-chart-cons>
+    <app-dethby-year-line></app-dethby-year-line>
     </div>
     </div>
+
   </section>
   `,
   styles: [`
