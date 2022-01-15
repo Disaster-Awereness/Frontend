@@ -5,9 +5,7 @@ import { SingleDataSet, Label, monkeyPatchChartJsLegend, monkeyPatchChartJsToolt
 @Component({
   selector: 'app-dis-assoc-pie',
   template: `
-    <p>
-      dis-assoc-pie works!
-    </p>
+
     <div style="display: block;">
       <canvas baseChart width="100%" height="100%"
         [data]="doughnutChartData"
@@ -32,7 +30,8 @@ export class DisAssocPieComponent implements OnInit {
   ];
   
   public doughnutChartData: MultiDataSet = [
-    [1, 1, 15, 5, 159, 149, 4, 1210]
+    [0.06, 0.06, 0.97, 0.32, 10.30, 9.65, 0.26, 78.37]
+    //[1, 1, 15, 5, 159, 149, 4, 1210]
   ];
   
   public doughnutChartType: ChartType = 'doughnut';

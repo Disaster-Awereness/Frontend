@@ -22,9 +22,11 @@ import { Component, OnInit } from '@angular/core';
   </div>
       </div>
     <div class="column">
-    <app-map></app-map>
+    <app-multi-chart-cons></app-multi-chart-cons>
     </div>
     </div>
+    <app-dethby-year-line></app-dethby-year-line>
+
   </section>
   `,
   styles: [`
