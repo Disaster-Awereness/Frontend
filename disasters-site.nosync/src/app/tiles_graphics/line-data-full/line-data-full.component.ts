@@ -48,6 +48,7 @@ export type ChartOptions = {
   #chart {
       max-width: 100%;
       margin: 35px auto;
+      background: white;
   }
   `]
 })

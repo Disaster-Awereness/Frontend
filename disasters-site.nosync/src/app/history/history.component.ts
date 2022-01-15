@@ -8,22 +8,28 @@ import { Component, OnInit } from '@angular/core';
       <div class="column is-two-fifths">
       <div class="content">
       <p>
-        The number of deaths from natural disasters can be highly variable from year-to-year; some years pass with very few deaths before a large disaster event claims many lives.
-        If we look at the average over the past decade, approximately 60,000 people globally died from natural disasters each year. This represents 0.1% of global deaths.
+        The scientific study of earthquakes is comparatively new. Until the 18th century, few factual descriptions of earthquakes were recorded, and the natural cause of earthquakes was little understood. Those who did look for natural causes often reached conclusions that seem fanciful today; one popular theory was that earthquakes were caused by air rushing out of caverns deep in the Earth's interior.
       </p>
       <p>
-        In the visualizations shown here we see the annual variability in the number and share of deaths from natural disasters in recent decades.
-        What we see is that in many years, the number of deaths can be very low – often less than 10,000, and accounting for as low as 0.01% of total deaths. But we also see the devastating impact of shock events: the 1983-85 famine and drought in Ethiopia; the 2004 Indian Ocean earthquake and tsunami; Cyclone Nargis which struck Myanmar in 2008; and the 2010 Port-au-Prince earthquake in Haiti. All of these events pushed global disasters deaths over 200,000 – more than 0.4% of deaths in these years.
+        The earliest earthquake for which we have descriptive information occurred in China in 1177 B.C. The Chinese earthquake catalog describes several dozen large earthquakes in China during the next few thousand years. Earthquakes in Europe are mentioned as early as 580 B.C., but the earliest for which we have some descriptive information occurred in the mid-16th century. The earliest known earthquakes in the Americas were in Mexico in the late 14th century and in Peru in 1471, but descriptions of the effects were not well documented. By the 17th century, descriptions of the effects of earthquakes were being published around the world - although these accounts were often exaggerated or distorted.
       </p>
       <p>
-        Low-frequency, high-impact events such as earthquakes and tsunamis are not preventable, but such high losses of human life are. We know from historical data that the world has seen a significant reduction in disaster deaths through earlier prediction, more resilient infrastructure, emergency preparedness, and response systems.
-        Those at low incomes are often the most vulnerable to disaster events: improving living standards, infrastructure and response systems in these regions will be key to preventing deaths from natural disasters in the coming decades.
+        The most widely felt earthquakes in the recorded history of North America were a series that occurred in 1811-1812 near New Madrid, Missouri. A great earthquake, whose magnitude is estimated to be about 8, occurred on the morning of December 16, 1811. Another great earthquake occurred on January 23, 1812, and a third, the strongest yet, on February 7, 1812. Aftershocks were nearly continuous between these great earthquakes and continued for months afterwards. These earthquakes were felt by people as far away as Boston and Denver. Because the most intense effects were in a sparsely populated region, the destruction of human life and property was slight. If just one of these enormous earthquakes occurred in the same area today, millions of people and buildings and other structures worth billions of dollars would be affected.
+      </p>
+      <p>
+        The San Francisco earthquakes of 1906 was one of the most destructive in the recorded history of North America - the earthquake and the fire that followed killed nearly 700 people and left the city in ruins.
+      </p>
+      <p>
+        The Alaska earthquake of March 27, 1964, was of greater magnitude than the San Francisco earthquake; it released perhaps twice as much energy and was felt over an area of almost 500,000 square miles.
+      </p>
+      <p>
+        The ground motion near the epicenter was so violent that the tops of some trees were snapped off. One hundred and fourteen people (some as far away as California) died as a result of this earthquake, but loss of life and property would have been far greated had Alaska been more densely populated.
       </p>
   </div>
       </div>
-    <div class="column">
-    <app-map></app-map>
-    </div>
+      <div class="column">
+      <img src="/assets/img/History.jpg" alt="How do earthquakes form?" width="80%" height="80%" style="float:right">
+      </div>
     </div>
   </section>
   `,

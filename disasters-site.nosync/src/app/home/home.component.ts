@@ -9,17 +9,17 @@ import { ViewportScroller } from '@angular/common';
       <div class="hero-body">
         <div class="container">
           <h1 class="title has-text-centered">
-            The EM-DAT Atlas
-            The Georeferenced Emergency Events Database (EM-DAT)
-            Centre for Research on the Epidemiology of Disasters (CRED)
+            The Earthquake Data Dashboard for Education
           </h1>
           <p class="subtitle has-text-centered">
-          The aim of the online EM-DAT atlas is to show a first overview of how geo-referenced EM-DAT data can be mapped.
-          Twelve countries have their natural disasters mapped and for each country the maps are accompanied by an 
-          overview of the past and current disaster situation in the country. Technological disasters are omitted from this analysis.
-          When using data or figures displayed in the EM-DAT Atlas, please use appropriate sourcing:
-          EM-DAT, CRED / UCLouvain, Brussels, Belgium, www.emdat.be (D. Guha-Sapir)
-          Press the "Begin the story" button   
+          <br>
+          The aim of this dashboard is to enable an extensive exploration of worldwide Earthquake events by 
+          visualizing data from 1900 up to now. It is not only useful to create awareness about such kinds of 
+          natural hazards, but also for educational purposes of middle-aged to high school students. For this 
+          project, we looked at data about more than 1500 earthquakes occuring in over 200 different countries. 
+          The unterlying source is a dataset called the EM-DAT Atlas (CRED/UCLouvain, Brussels, Belgium - D. Guha-Sapir).
+          <br><br>
+          To start exploration, press the "Begin the story" button   
           </p>
           <div class="box has-text-centered">
           <button class="button is-outlined" (click)="onClickScroll('banner')">Begin the story</button>
@@ -32,7 +32,7 @@ import { ViewportScroller } from '@angular/common';
     ` .hero {
         /*Using linear gradient to make image darker */
         background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)), url("/assets/img/volcano.jpg");
+        rgba(0, 0, 0, 0.8)), url("/assets/img/earthquake_picture.webp");
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;

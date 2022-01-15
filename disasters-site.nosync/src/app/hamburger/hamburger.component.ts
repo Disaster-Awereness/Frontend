@@ -78,7 +78,7 @@ import { Component, OnInit } from '@angular/core';
   margin: 0;
   padding: 80px 0;
   list-style: none;
-  background-color: #E3F2FD;
+  background-color: #E8EAF6;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
   transition-duration: .25s;
   z-index: 1;

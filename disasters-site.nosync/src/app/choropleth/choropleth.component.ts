@@ -46,7 +46,7 @@ import { FeatureCollection } from 'geojson';
 
   .map-container {
     position: relative;
-    height: 80%;
+    height: 100%;
     width: 100%;
     top: 0;
     left: 0;
@@ -284,16 +284,16 @@ function style(feature:any) {
 var info:any = new L.Control();
 
 info.onAdd = function (mymap:any) {
-  this._div = L.DomUtil.create('div', 'info'); // Create a div with a class "info".
+  this._div = L.DomUtil.create('div', 'info'); // Create a div with a class "info"
   this.update();
   return this._div;
 };
 
 //  Update the control based on feature properties passed.
 info.update = function (props:any) {
-  this._div.innerHTML = '<h5>No. of earthquakes by country size</h5>' +  (props ?
+  this._div.innerHTML = '<div id="infobox" style="background: rgba(255,255,255,0.8); padding: 6px 8px; box-shadow: 0 0 15px rgba(0,0,0,0.4); border-radius: 5px;"><h5>No. of earthquakes by country size</h5>' +  (props ?
     '<b>' + props.name + '</b><br />' + props.eqNumber + ' earthquakes occured here!'
-    : 'Hover over a country');
+    : 'Hover over a country </div>');
 };
 
 info.addTo(mymap);
