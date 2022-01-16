@@ -41,7 +41,7 @@ import { Component } from '@angular/core';
   <app-by-country></app-by-country>
 
   <!--Banner for top countries-->
-  <app-banner>Human Impacts</app-banner>
+  <app-banner>Human Impact</app-banner>
 
   <!--Top countries-->
   <app-top-countries></app-top-countries>
