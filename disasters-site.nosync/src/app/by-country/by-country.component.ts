@@ -8,17 +8,21 @@ import { Component, OnInit } from '@angular/core';
       <div class="column is-two-fifths">
       <div class="content">
       <p>
-        The number of deaths from natural disasters can be highly variable from year-to-year; some years pass with very few deaths before a large disaster event claims many lives.
-        If we look at the average over the past decade, approximately 60,000 people globally died from natural disasters each year. This represents 0.1% of global deaths.
+        As we know that the earthquake occurance, frequequency and magnitude varies a lot locally according to seismic activity at tectonic plate boundaries, it is possible to identify countries
+        that are some kind of earthquake hotspots. Looking at the choropleth map it becomes apparent, that the Carribean countries, the South-American Pacific coast, southern European regions, 
+        south-eastern and central Asian countries and the Japanese islands are especially at risk of suffering from major earthquakes. This also goes in line with our knowledge about the worst 
+        earthquake events in recent human history, which for example took place in Chile, Mexico, Haiti or Portugal.
       </p>
       <p>
-        In the visualizations shown here we see the annual variability in the number and share of deaths from natural disasters in recent decades.
-        What we see is that in many years, the number of deaths can be very low – often less than 10,000, and accounting for as low as 0.01% of total deaths. But we also see the devastating impact of shock events: the 1983-85 famine and drought in Ethiopia; the 2004 Indian Ocean earthquake and tsunami; Cyclone Nargis which struck Myanmar in 2008; and the 2010 Port-au-Prince earthquake in Haiti. All of these events pushed global disasters deaths over 200,000 – more than 0.4% of deaths in these years.
+        In contrast,
+         there are also some countries that are almost at no risk of being struck by a major earthquake. Most of these countries are located within a tectonic plate where there is almost
+        no seismic activityof diverging or converging plates. Many African countries for example lie on the African plate and do not face relevant risks, as well as Australia, eastern South-America or
+        northern Eurasia. Of course, just looking at earthquake occurances does not reveal the true geographic pattern, as country size differs drastically. Although China has seen most earthquake events in the
+        last 100 years, the size of the country makes it simply more likely to happen there. Relatively, people living in small Carribean countries or on South-east Asian islands are at a much higher risk.
       </p>
       <p>
-        Low-frequency, high-impact events such as earthquakes and tsunamis are not preventable, but such high losses of human life are. We know from historical data that the world has seen a significant reduction in disaster deaths through earlier prediction, more resilient infrastructure, emergency preparedness, and response systems.
-        Those at low incomes are often the most vulnerable to disaster events: improving living standards, infrastructure and response systems in these regions will be key to preventing deaths from natural disasters in the coming decades.
-      </p>
+        There are some areas that do not show data in the map, e.g. French Guiana or the Kosovo. This is mostly because of missing data, or unclear terretorial borders at the time of data measurement. 
+    </p>
   </div>
       </div>
     <div class="column">
