@@ -35,7 +35,7 @@ import { Component, OnInit } from '@angular/core';
         Later during the course of the 20th century, scientists have managed to use seismic
         waves in order to find out more about earthquakes. They deducted that Earth has melted 
         core in the center, surrounded by somewhat less dense material which comprises the "mantle"
-        and on top of the mantle is thin rocky layer called "crust" on which we humans live.
+        and on top of the mantle is thin rocky layer called "crust" on which we humans live. <a href="#credits">[1]</a>
       </p>
   </div>
       </div>
