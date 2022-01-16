@@ -13,12 +13,12 @@ import { Component, OnInit } from '@angular/core';
       <li><a class="menu__item" href="#">Home</a></li>
       <li><a class="menu__item" href="#introduction">Introduction</a></li>
 			<li><a class="menu__item" href="#definition">Definition</a></li>
-			<li><a class="menu__item" href="#countries">Countries</a></li>
+      <li><a class="menu__item" href="#history">History</a></li>
 			<li><a class="menu__item" href="#consequences">Consequences</a></li>
-			<li><a class="menu__item" href="#history">History</a></li>
+      <li><a class="menu__item" href="#countries">Countries</a></li>
+      <li><a class="menu__item" href="#topcountries">Human Impacts</a></li>
       <li><a class="menu__item" href="#didyouknow">Did you know?</a></li>
-      <li><a class="menu__item" href="#safety">Safety</a></li>
-      <li><a class="menu__item" href="#topcountries">Top countries</a></li>
+      <li><a class="menu__item" href="#safety">Safety Advice</a></li>
     </ul>
   </div>
   `,

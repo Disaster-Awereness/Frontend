@@ -3,8 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-safety',
   template: `
-
-<section class="container p-5">
+<section class="container p-5" id="safety">
     <div class="columns is-vcentered is-justify-content-space-evenly">
         <div class="column is-one-third">
             <div class="card">

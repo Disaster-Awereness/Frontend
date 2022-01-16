@@ -55,12 +55,9 @@ import { Component, OnInit } from '@angular/core';
             </figure>
           </div>
           <div class="card-content">
-            Image by H.G. Wilshire, U.S. Geological Survey.
-            <a>@managem</a>
-            <a href="#">#newpost</a>
-            <a href="#">#update</a>
-            <br />
-            <time datetime="2022-1-13">16:54 PM - 13 Jan 2022</time>
+            H.G. Wilshire
+            <br/>
+            <i>U.S. Geological Survey</i>
           </div>
         </div>
 
@@ -81,12 +78,7 @@ import { Component, OnInit } from '@angular/core';
             </figure>
           </div>
           <div class="card-content">
-            nbcnews.
-            <a>@managem</a>
-            <a href="#">#newpost</a>
-            <a href="#">#update</a>
-            <br />
-            <time datetime="2022-1-13">16:54 PM - 13 Jan 2022</time>
+            nbcnews
           </div>
         </div>
       </div>

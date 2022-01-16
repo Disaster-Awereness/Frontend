@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-did-you-know',
   template: `
 
-<section class="container py-6">
+<section class="container py-6" id="didyouknow">
 
       <div class="tile is-ancestor">
           <div class="tile is-parent">

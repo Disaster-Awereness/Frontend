@@ -9,25 +9,6 @@ import { Component } from '@angular/core';
   <!--Summary-->
   <app-summary></app-summary>
 
-  <!--Banner for definition-->
-  <app-banner>Some interesting facts about definition of earthquakes</app-banner>
-
-  <!--Definition-->
-  <app-definition></app-definition>
-
-  <!--Banner for consequences-->
-  <app-banner>Some interesting facts about earthquake consequences</app-banner>
-
-  <!--Consequences-->
-  <app-consequences></app-consequences>
-
-  <!--Banner for history-->
-  <app-banner>Some interesting facts about earthquake history</app-banner>
-
-  <!--History-->
-  <app-history></app-history>
-
-  
   <!--Banner for introduction-->
   <app-banner>First person to come up with scientifict explanation of earthquakes
      was Cambridge professor John Michell</app-banner>
@@ -35,14 +16,32 @@ import { Component } from '@angular/core';
   <!--Introduction-->
   <app-introduction></app-introduction>
 
+  <!--Banner for definition-->
+  <app-banner>Definition</app-banner>
+
+  <!--Definition-->
+  <app-definition></app-definition>
+
+  <!--Banner for history-->
+  <app-banner>History</app-banner>
+
+  <!--History-->
+  <app-history></app-history>
+
+  <!--Banner for consequences-->
+  <app-banner>Earthquake Consequences</app-banner>
+
+  <!--Consequences-->
+  <app-consequences></app-consequences>
+
   <!--Banner for countries-->
-  <app-banner>Some interesting facts about countries with most earthquakes</app-banner>
+  <app-banner>Looking at the country level...</app-banner>
 
   <!--By country-->
   <app-by-country></app-by-country>
 
   <!--Banner for top countries-->
-  <app-banner>Human impacts</app-banner>
+  <app-banner>Human Impacts</app-banner>
 
   <!--Top countries-->
   <app-top-countries></app-top-countries>
@@ -54,9 +53,8 @@ import { Component } from '@angular/core';
   <app-did-you-know></app-did-you-know>
 
   <!--Banner for safety-->
-  <app-banner>Safety
+  <app-banner>Safety Advice
     <p class="subtitle">
-
       To stay safe before, during & after an earthquake, review the following tips
     </p>
 
