@@ -58,13 +58,16 @@ import { Component, OnInit } from '@angular/core';
             H.G. Wilshire
             <br/>
             <i>U.S. Geological Survey</i>
+            <br/>
+            <a href="https://topex.ucsd.edu/es10/es10.1997/lectures/lecture20/pics/022sr.jpeg" target="_blank">topex.ucsd.edu</a>
+            
           </div>
         </div>
 
         <div class="card">
           <header class="card-header">
             <p class="card-header-title">
-              Tsunamis Effect
+              Tsunamis
             </p>
             <div class="card-header-icon">
               <span class="icon">
@@ -78,7 +81,12 @@ import { Component, OnInit } from '@angular/core';
             </figure>
           </div>
           <div class="card-content">
-            nbcnews
+            Mainichi Shimbun
+            <br/>
+            <i>nbcnews</i>
+            <br/>
+            <a href="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2018_49/2669406/181204-japan-tsunami-earthquake-cs-920a.jpg" target="_blank">nbcnews.com</a>
+          
           </div>
         </div>
       </div>
@@ -100,18 +108,18 @@ import { Component, OnInit } from '@angular/core';
             </figure>
           </div>
           <div class="card-content">
-            Nicola Litchfield, GNS Science
-            <a>@managem</a>
-            <a href="#">#newpost</a>
-            <a href="#">#update</a>
-            <br />
-            <time datetime="2022-1-13">16:54 PM - 13 Jan 2022</time>
+            Nicola Litchfield, 
+             <br/>
+            <i>GNS Science</i>
+            <br/>
+            <a href="https://www.gns.cri.nz/var/ezwebin_site/storage/images/home/news-and-events/media-releases/strongest-ground-shaking-in-nz/the-hundalee-fault/67312-1-eng-GB/The-Hundalee-Fault.jpg" target="_blank">gns.cri.nz</a>
+          
           </div>
         </div>
         <div class="card">
           <header class="card-header">
             <p class="card-header-title">
-              Liquefaction Effect
+              Liquefaction
             </p>
             <div class="card-header-icon">
                 <span class="icon">
@@ -125,12 +133,12 @@ import { Component, OnInit } from '@angular/core';
             </figure>
           </div>
           <div class="card-content">
-            static.temblor.net
-            <a>@managem</a>
-            <a href="#">#newpost</a>
-            <a href="#">#update</a>
-            <br />
-            <time datetime="2022-1-13">16:54 PM - 13 Jan 2022</time>
+            Living with Liquefaction
+             <br/>
+            <i>Temblor.net</i>
+            <br/>
+            <a href="https://static.temblor.net/wp-content/uploads/2015/11/liquefaction.jpg" target="_blank">static.temblor.net</a>
+          
           </div>
         </div>
       </div>
@@ -153,12 +161,12 @@ import { Component, OnInit } from '@angular/core';
             </figure>
           </div>
           <div class="card-content">
-            Deadliest Landslides Of The Century- WorldAtlas
-            <a>@managem</a>
-            <a href="#">#newpost</a>
-            <a href="#">#update</a>
-            <br />
-            <time datetime="2022-1-13">16:54 PM - 13 Jan 2022</time>
+            Deadliest Landslides
+             <br/>
+            <i>worldatlas</i>
+            <br/>
+            <a href="https://www.worldatlas.com/r/w960-q80/upload/b2/25/46/shutterstock-476772370.jpg" target="_blank">www.worldatlas.com</a>
+          
           </div>
         </div>
         <div class="card">
@@ -178,12 +186,12 @@ import { Component, OnInit } from '@angular/core';
             </figure>
           </div>
           <div class="card-content">
-            wildfiretoday.com
-            <a>@managem</a>
-            <a href="#">#newpost</a>
-            <a href="#">#update</a>
-            <br />
-            <time datetime="2022-1-13">16:54 PM - 13 Jan 2022</time>
+            Earthquake fires 6
+             <br/>
+            <i>Wildfire Today</i>
+            <br/>
+            <a href="https://www.worldatlas.com/r/w960-q80/upload/b2/25/46/shutterstock-476772370.jpg" target="_blank">www.worldatlas.com</a>
+          
           </div>
         </div>
       </div>
