@@ -1,11 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { ViewportScroller } from '@angular/common';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-home',
   template: `
     <section class="hero is-medium is-bold">
     <app-hamburger></app-hamburger>
+    <div class="github">
+    <a href="https://github.com/Disaster-Awereness/Frontend"><fa-icon [icon]="faGithub"></fa-icon></a>
+    </div>
       <div class="hero-body">
         <div class="container">
           <h1 class="title has-text-centered">
@@ -79,10 +83,20 @@ import { ViewportScroller } from '@angular/common';
         margin-right: 20px;
       }
 }
+      .github {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 2;
+        color: grey;
+        font-size: 30px;
+      }
     `
   ]
 })
 export class HomeComponent implements OnInit {
+
+  faGithub = faGithub;
 
   constructor(private viewportScroller: ViewportScroller) { }
 
