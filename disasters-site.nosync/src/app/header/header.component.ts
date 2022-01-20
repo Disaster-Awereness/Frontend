@@ -4,11 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-header',
   template: `
     <div class="navbar">
-      <div class="navbar-brand">
-        <a class="navbar-item">
-        
-        </a>
-      </div>
+      
     </div>
   `,
   styles: [`
