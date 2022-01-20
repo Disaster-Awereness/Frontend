@@ -37,20 +37,21 @@ import { Component, OnInit } from '@angular/core';
         core in the center, surrounded by somewhat less dense material which comprises the "mantle"
         and on top of the mantle is thin rocky layer called "crust" on which we humans live.
       </p>
-      <button style= "background-color:#94C9DC; border-radius:5px" (click)="showAnswer=!showAnswer">Can you find some of the heaviest earthquakes in recent history?</button>
-      <div *ngIf="showAnswer">
-           <br> 
-           We put the answer here!
-           
-           Like: Some of the biggest events listed...
-           <br>
-      </div>
   </div>
       </div>
     <div class="column">
     <app-map></app-map>
     </div>
     </div>
+    <button style= "background-color:#84b1e0; border-radius:5px;" (click)="showAnswer=!showAnswer">Can you find some of the heaviest earthquakes in recent history?</button>
+      <div class="hidden" *ngIf="showAnswer">
+           <br> 
+           We put the answer here!
+           
+           Like: Some of the biggest events listed...
+           <br>
+           Still working on it!
+      </div>
   </section>
   `,
   styles: [
@@ -64,6 +65,15 @@ import { Component, OnInit } from '@angular/core';
       padding: 20px;
       margins: 0px;
     }
+
+    .hidden {
+      display: block;
+      font-style: italic;
+      padding-left: 2em;
+      margin-top: 0.5em;
+      margin-bottom: 1.5em;
+      font-size: 100%;
+      }
     `
   ]
 })

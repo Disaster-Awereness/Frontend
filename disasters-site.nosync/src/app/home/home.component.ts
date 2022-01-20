@@ -8,7 +8,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
     <section class="hero is-medium is-bold">
     <app-hamburger></app-hamburger>
     <div class="github">
-    <a href="https://github.com/Disaster-Awereness/Frontend"><fa-icon [icon]="faGithub"></fa-icon></a>
+    <a href="https://github.com/Disaster-Awereness/Frontend" target="_blank"><fa-icon [icon]="faGithub"></fa-icon></a>
     </div>
       <div class="hero-body">
         <div class="container">
