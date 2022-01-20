@@ -35,8 +35,16 @@ import { Component, OnInit } from '@angular/core';
         Later during the course of the 20th century, scientists have managed to use seismic
         waves in order to find out more about earthquakes. They deducted that Earth has melted 
         core in the center, surrounded by somewhat less dense material which comprises the "mantle"
-        and on top of the mantle is thin rocky layer called "crust" on which we humans live. <a href="#credits">[1]</a>
+        and on top of the mantle is thin rocky layer called "crust" on which we humans live.
       </p>
+      <button style= "background-color:#94C9DC; border-radius:5px" (click)="showAnswer=!showAnswer">Can you find some of the heaviest earthquakes in recent history?</button>
+      <div *ngIf="showAnswer">
+           <br> 
+           We put the answer here!
+           
+           Like: Some of the biggest events listed...
+           <br>
+      </div>
   </div>
       </div>
     <div class="column">
@@ -51,10 +59,17 @@ import { Component, OnInit } from '@angular/core';
       padding: 80px;
       margins: 0px;
     }
+
+    button {
+      padding: 20px;
+      margins: 0px;
+    }
     `
   ]
 })
 export class IntroductionComponent implements OnInit {
+
+  showAnswer: boolean = false;
 
   constructor() { }
 
