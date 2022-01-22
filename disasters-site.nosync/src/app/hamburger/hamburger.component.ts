@@ -10,15 +10,42 @@ import { Component, OnInit } from '@angular/core';
       <span></span>
     </label>
     <ul class="menu__box">
-      <li><a class="menu__item" href="#">Home</a></li>
-      <li><a class="menu__item" href="#introduction">Introduction</a></li>
-			<li><a class="menu__item" href="#definition">Definition</a></li>
-      <li><a class="menu__item" href="#history">History</a></li>
-			<li><a class="menu__item" href="#consequences">Consequences</a></li>
-      <li><a class="menu__item" href="#countries">Countries</a></li>
-      <li><a class="menu__item" href="#topcountries">Human Impacts</a></li>
-      <li><a class="menu__item" href="#didyouknow">Did you know?</a></li>
-      <li><a class="menu__item" href="#safety">Safety Advice</a></li>
+      <li>
+      <a class="menu__item" href="#">Home</a>
+      <div class="hide">Jump back to the top!</div>
+      </li>
+      <li>
+      <a class="menu__item" href="#introduction">Introduction</a>
+      <div class="hide">Get started with the story!</div>
+      </li>
+			<li>
+      <a class="menu__item" href="#definition">Definition</a>
+      <div class="hide">What is an earthquake?</div>
+      </li>
+      <li>
+      <a class="menu__item" href="#history">History</a>
+      <div class="hide">Learn about the past!</div>
+      </li>
+			<li>
+      <a class="menu__item" href="#consequences">Consequences</a>
+      <div class="hide">See the major dangers!</div>
+      </li>
+      <li>
+      <a class="menu__item" href="#countries">Countries</a>
+      <div class="hide">Where do they happen?</div>
+      </li>
+      <li>
+      <a class="menu__item" href="#topcountries">Human Impacts</a>
+      <div class="hide">See the impact on humans!</div>
+      </li>
+      <li>
+      <a class="menu__item" href="#didyouknow">Did you know?</a>
+      <div class="hide">Dive into our charts!</div>
+      </li>
+      <li>
+      <a class="menu__item" href="#safety">Safety Advice</a>
+      <div class="hide">How to behave in danger?</div>
+      </li>
     </ul>
   </div>
   `,
@@ -73,12 +100,13 @@ import { Component, OnInit } from '@angular/core';
   position: fixed;
   top: 0;
   left: -100%;
-  width: 300px;
-  height: 600px;
+  width: 250px;
+  height: 550px;
   margin: 0;
   padding: 80px 0;
   list-style: none;
   background-color: #E8EAF6;
+  opacity: 0.9;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
   transition-duration: .25s;
   z-index: 1;
@@ -88,15 +116,30 @@ import { Component, OnInit } from '@angular/core';
   display: block;
   padding: 12px 24px;
   color: #333;
-  font-family: "Playfair Display", "Merriweather", "Pt Serif";
-  font-size: 20px;
+  font-family: "Verdana", "Merriweather", "Pt Serif";
+  font-size: 15px;
   font-weight: 600;
   text-decoration: none;
   transition-duration: .25s;
 }
+
+.hide {
+  font-size: 0%;
+  transition-property: font-size;
+  transition-duration: .5s;
+}
+
 .menu__item:hover {
   background-color: #CFD8DC;
 }
+
+.menu__item:hover + .hide {
+  display: block;
+  padding: 12px 24px;
+  font-size: 100%;
+  color: #FF8B94;
+}
+
 `]
 })
 export class HamburgerComponent implements OnInit {

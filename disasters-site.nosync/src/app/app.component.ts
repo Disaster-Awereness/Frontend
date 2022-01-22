@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
   <app-home></app-home>
 
   <!--Summary-->
-  <app-summary></app-summary>
+  <!-- <app-summary></app-summary> -->
 
   <!--Banner for introduction-->
-  <app-banner>First person to come up with scientifict explanation of earthquakes
+  <app-banner>The first person to come up with a scientific explanation of earthquakes
      was Cambridge professor John Michell</app-banner>
 
   <!--Introduction-->

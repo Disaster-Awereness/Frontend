@@ -43,7 +43,7 @@ import { Component, OnInit } from '@angular/core';
     <app-map></app-map>
     </div>
     </div>
-    <button style= "background-color:#84b1e0; border-radius:5px;" (click)="showAnswer=!showAnswer">Can you find some of the heaviest earthquakes in recent history?</button>
+    <button class="question" style= "background-color:#84b1e0; border-radius:5px;" (click)="showAnswer=!showAnswer">Can you find some of the heaviest earthquakes in recent history?</button>
       <div class="hidden" *ngIf="showAnswer">
            <br> 
            We put the answer here!
@@ -72,8 +72,8 @@ import { Component, OnInit } from '@angular/core';
       padding-left: 2em;
       margin-top: 0.5em;
       margin-bottom: 1.5em;
-      font-size: 100%;
       }
+
     `
   ]
 })
