@@ -16,7 +16,6 @@ export type ChartOptions = {
   chart: ApexChart;
   dataLabels: ApexDataLabels;
   markers: ApexMarkers;
-  title: ApexTitleSubtitle;
   yaxis: ApexYAxis;
   xaxis: ApexXAxis;
   tooltip: ApexTooltip;
@@ -30,9 +29,6 @@ import { YearData, Deaths } from './data';
 @Component({
   selector: 'app-dethby-year-line',
   template: `
-    <p>
-      dethby-year-line works!
-    </p>
     <apx-chart
   [series]="chart1options.series"
   [chart]="chart1options.chart"
@@ -42,9 +38,7 @@ import { YearData, Deaths } from './data';
   [markers]="chart1options.markers"
   [stroke]="chart1options.stroke"
   [xaxis]="chart1options.xaxis"
-  [tooltip]="chart1options.tooltip"
-  [title]="chart1options.title"
-></apx-chart>
+  [tooltip]="chart1options.tooltip"></apx-chart>
   `,
   styles: [
     `ul {
@@ -125,11 +119,6 @@ export class DethbyYearLineComponent {
         labels: {
           rotate: 0,
         }
-      },
-      title: {
-        text: "Earthquake's Deaths (1900 - 2021)",
-        align: "center",
-        offsetX: 0
       },
     };
   }

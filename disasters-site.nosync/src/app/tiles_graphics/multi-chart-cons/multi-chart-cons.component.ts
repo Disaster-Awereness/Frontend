@@ -221,7 +221,7 @@ export class MultiChartConsComponent {
         }
       },
       title: {
-        text: "Earthquake's Affectations (1992 - 2021)",
+        text: "Earthquake's human impact (1992 - 2021)",
         align: "left",
         offsetX: 90
       },

@@ -26,7 +26,7 @@ import { Component, OnInit } from '@angular/core';
                     <a>Taken from:</a> <br>
                     <a href="https://earthquake.usgs.gov/">https://earthquake.usgs.gov/</a> <br>
                     <a>@Staysafety</a>
-                    <a href="#">#earthquakes</a>
+                    <a href="#">#BeforeEarthquakes</a>
                     <a href="#">#USGS</a>
                     <br />
                     <!--time datetime="2016-1-1">16:54 PM - 6 Feb 2021</time-->
@@ -54,7 +54,7 @@ import { Component, OnInit } from '@angular/core';
                     <a>Taken from:</a> <br>
                     <a href="https://earthquake.usgs.gov/">https://earthquake.usgs.gov/</a> <br>
                     <a>@Staysafety</a>
-                    <a href="#">#earthquakes</a>
+                    <a href="#">#DuringEarthquakes</a>
                     <a href="#">#USGS</a>
                     <br />
                     <!--time datetime="2016-1-1">16:54 PM - 6 Feb 2021</time-->
@@ -82,7 +82,7 @@ import { Component, OnInit } from '@angular/core';
                     <a>Taken from:</a> <br>
                     <a href="https://earthquake.usgs.gov/">https://earthquake.usgs.gov/</a> <br>
                     <a>@Staysafety</a>
-                    <a href="#">#earthquakes</a>
+                    <a href="https://earthquake.usgs.gov/">#AfterEarthquakes</a>
                     <a href="#">#USGS</a>
                     <br />
                     <!--time datetime="2016-1-1">16:54 PM - 6 Feb 2021</time-->
