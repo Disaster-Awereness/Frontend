@@ -137,7 +137,7 @@ import { Component, OnInit } from '@angular/core';
   display: block;
   padding: 12px 24px;
   font-size: 100%;
-  color: #FF8B94;
+  color: #6d6f78;
 }
 
 `]

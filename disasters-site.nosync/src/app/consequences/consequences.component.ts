@@ -21,27 +21,32 @@ import { Component, OnInit } from '@angular/core';
         <p>
           <b>Ground Shaking</b> is a term used to describe the vibration of the ground during an earthquake. It is the most familiar effect of earthquakes. It is a result of the passage of seismic waves through the ground, and ranges from quite gentle in small earthquakes to incredibly violent in large earthquakes.
           <br>
+          <br>
           <b>Ground Rupture</b> is another important effect of earthquakes which occurs when the earthquake movement along a fault actually breaks the Earth's surface. Rupture causes problems for humans by, well, rupturing things; pipelines, tunnels, aqueducts, railway lines, roads, and airport runways which cross an area of active rupture can easily be destroyed or severely damaged. 
+          <br>
           <br>
           <b>Landslides</b> are caused by earthquakes both by direct rupture and by sustained shaking of unstable slopes. They can easily destroy buildings in their path, or block roads and railroad lines, or take hilltop homes with them as they tumble.
           <br>
+          <br>
           <b>Tsunamis</b> , which are popularly -- and incorrectly -- known as "tidal waves", are a grave hazard to many parts of the world, particularly around the Pacific Ocean basin. Tsunamis are a series of water waves caused when the seafloor moves vertically in an earthquake and which can travel vast distances in a short period of time. Tsunami speeds in the deep ocean have been measured at more than 700 km/hr, comparable to some jet planes, and when tsunamis reach shallow water near the coast, they can reach heights of more than 27 meters (90 feet)!
           <br>
+          <br>
           <b>Liquefaction</b>  and subsidence of the ground are important effects which often are the cause of much destruction in earthquakes, particularly in unconsolidated ground. Liquefaction is when sediment grains are literally made to float in groundwater, which causes the soil to lose all its solidity. Subsidence can then follow as the soil recompacts. Sand blows, or sand volcanoes, form when pressurized jets of groundwater break through the surface. They can spray mud and sand over an area a few meters across. All of these effects pose a grave danger to buildings, roads, train lines, airport runways, gas lines, etc.
+          <br>
           <br>
           <b>Fires</b> are a major source of damage after earthquakes. Ground rupture and liquefaction can easily rupture natural gas mains and water mains, both contributing to the ignition of fires and hindering the efforts to control them.
 
         </p>
  
       </div>
-      <button class="question" style= "background-color:#84b1e0; border-radius:5px;" (click)="showAnswer=!showAnswer">In your opinion, what is the most important consiquence of earthquake?</button>
+      <button class="question" style= "background-color:#e4e6f0; border-radius:5px;" (click)="showAnswer=!showAnswer">What do you think is the most dangerous earthquake consequence of the ones mentioned? <br><br> <b>Click to see the answer!</b></button>
       <div class="hidden" *ngIf="showAnswer">
            <br> 
-           We put the answer here!
-           
-           Like: Some of the biggest events listed...
+           When it comes to personal harm, the <b>ground rupture</b> causing buildings to collapse is the most dangerous threat during an Earthquake for humans! In some cases, 
+           the <b>fires</b> arising from the events are even more devastating. <br>
            <br>
-           Still working on it!
+           Regarding consequential other natural disasters, <b>landslides and tsunamis</b> are by far the most common ones. You will see more about that later!
+           
       </div>
 
 
@@ -220,6 +225,20 @@ import { Component, OnInit } from '@angular/core';
     padding: 80px;
     margins: 0px;
   }
+
+  button {
+    padding: 20px;
+    margins: 0px;
+  }
+
+  .hidden {
+    display: block;
+    font-style: italic;
+    padding-left: 0em;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+    }
+
   `
   ]
 })
