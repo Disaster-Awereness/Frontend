@@ -12,9 +12,9 @@ import { Component, OnInit } from '@angular/core';
     <h4>Literature</h4>
       <ul style="list-style-type:none;">
         <li>[1] Earthquakes in human history - Jelle Zeilinga de Boer and Donald Theodore Sanders, Princeton University Press, 2004.</li>
-        <li>[2].....</li>
-        <li>[3].....</li>
-        <li>[4].....</li>
+        <li>[2] <a href="https://en.wikipedia.org/wiki/Earthquake" target="_blank">Earthquake</a></li>
+        <li>[3] <a href="https://spaceplace.nasa.gov/earthquakes/en/" target="_blank">What Is an Earthquake? | NASA Space Place – NASA Science for Kids</a></li> 
+        <li>[4] <a href="https://pubs.usgs.gov/gip/earthq1/history.html" target="_blank">Earthquakes - General Interest Publication</a></li>
       </ul>
       <br>
     <h4>Images</h4>
@@ -25,7 +25,13 @@ import { Component, OnInit } from '@angular/core';
         <li>[IV] <a href="https://upload.wikimedia.org/wikipedia/commons/7/78/Flag_of_Chile.svg" target="_blank">Flag of Chile</a> by wikipedia </li>
         <li>[V] <a href="https://www.bluebird-electric.net/oceanography/ocean_pictures/Pacific-Ocean-RIng-Of-Fire-Map.jpg" target="_blank">Pacific ring</a> by bluebird </li>
         <li>[VI] <a href="https://www.sos-kinderdoerfer.de/getmedia/5f7b0e66-2f26-4912-b30b-a50f8ce2186e/haiti-erdbeben-karte-C.jpg?width=260&height=173&ext=.jpg" target="_blank">Haiti's earthquake</a> by sos-kinderdoerfer </li>
-      </ul>
+        <li>[VII] <a href="https://topex.ucsd.edu/es10/es10.1997/lectures/lecture20/pics/022sr.jpeg" target="_blank">Ground Shaking</a> by sos-kinderdoerfer </li>
+        <li>[VIII] <a href="https://www.gns.cri.nz/var/ezwebin_site/storage/images/home/news-and-events/media-releases/strongest-ground-shaking-in-nz/the-hundalee-fault/67312-1-eng-GB/The-Hundalee-Fault.jpg" target="_blank">Ground Rupture</a> by sos-kinderdoerfer </li>
+        <li>[IX] <a href="https://www.worldatlas.com/r/w960-q80/upload/b2/25/46/shutterstock-476772370.jpg" target="_blank">Land Slides Effect</a> by sos-kinderdoerfer </li>
+        <li>[X] <a href="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2018_49/2669406/181204-japan-tsunami-earthquake-cs-920a.jpg" target="_blank">Tsunamis</a> by sos-kinderdoerfer </li>
+        <li>[XI] <a href="https://static.temblor.net/wp-content/uploads/2015/11/liquefaction.jpg" target="_blank">Liquefaction Effect</a> by sos-kinderdoerfer </li>
+        <li>[XII] <a href="https://www.worldatlas.com/r/w960-q80/upload/b2/25/46/shutterstock-476772370.jpg" target="_blank">Fires Effect</a> by sos-kinderdoerfer </li>
+        </ul>
 
       
       

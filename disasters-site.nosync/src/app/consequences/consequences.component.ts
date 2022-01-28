@@ -108,7 +108,7 @@ import { Component, OnInit } from '@angular/core';
         <div class="card">
           <header class="card-header">
             <p class="card-header-title">
-              Land Slides Effect
+            Liquefaction Effect
             </p>
             <div class="card-header-icon">
                 <span class="icon">
@@ -118,15 +118,15 @@ import { Component, OnInit } from '@angular/core';
           </header>
           <div class="card-image">
             <figure class="image is-4by3">
-                <img src='/assets/img/Landslides.jpg' style="border-radius: 0px;" width="50" />
+                <img src='/assets/img/Liquefaction.jpg' style="border-radius: 0px;" width="50" />
             </figure>
           </div>
           <div class="card-content">
-            Deadliest Landslides
+             Living with Liquefaction
              <br/>
-            <i>worldatlas</i>
+            <i>Temblor</i>
             <br/>
-            <a href="https://www.worldatlas.com/r/w960-q80/upload/b2/25/46/shutterstock-476772370.jpg" target="_blank">www.worldatlas.com</a>
+            <a href="https://static.temblor.net/wp-content/uploads/2015/11/liquefaction.jpg" target="_blank">static.temblor.net</a>
           
           </div>
         </div>
