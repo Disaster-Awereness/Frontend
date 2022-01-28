@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
       <div class="column is-two-fifths">
       <div class="content">
       <p>
-      <br><br><br>
+      <br><br>
       Over the years, at global scale, earthquakes have been a persistent human risk provocking thousands of deaths. However, human impacts from earqueakes may not be only fully captured in mortality rates. They also include, injury, homelessness, and displacement, which all have a significant impact on populations, development, poverty and resilience.
       
       The impacs of earthquakes on humanity can be classified as follows:
@@ -39,19 +39,23 @@ import { Component, OnInit } from '@angular/core';
       Additionally, in the early-to-mid 20th century, the annual death toll from earthquakes was high, often reaching over one million per year. In recent decades we have seen a substantial decline in numbers of injured, homeless, affected and deaths.
       This decline is impressive if we consider the current rate of population growth over this period. Nonetheless, it may be explained by the preparation and measurements taken by countries, the arise of aweraness in the community and the improvement in infrastructure.  
       </p>
-      <br>
-      <p>
-      <b><i>Note:</i></b>
-      <i>The visualisations show the numbers reported of people affected by earthquakes. Note that the <i> available data </i> report a series of data much complete for the last decades than for the historic estimates before 1968, which show in many ocassions no data or low tendencies in comarison with recent years. This may be caused due to the lack of reports or documentation collected to populate the data.  
-      However, an increase in the number of recorded earthquakes does not mean that it was the trend over time. 
-      </i></p>
+    </div>
   </div>
-      </div>
-    <div class="column">
+
+  <div class="column">
+    <br><br>
     <app-multi-chart-cons></app-multi-chart-cons>
     <app-dethby-year-line></app-dethby-year-line>
     </div>
-    </div>
+  </div>
+
+  <button class="question" style= "background-color:#e4e6f0; border-radius:5px;" (click)="showAnswer=!showAnswer">Are there less impacts before 1968? <br> <b>Click to see the reason!</b></button>
+      <div class="hidden" *ngIf="showAnswer">
+          <br> 
+          <i>The visualisations show the numbers reported of people affected by earthquakes. Note that the <i> available data </i> report a series of data much complete for the last decades than for the historic estimates before 1968, which show in many ocassions no data or low tendencies in comarison with recent years. This may be caused due to the lack of reports or documentation collected to populate the data. 
+          However, an increase in the number of recorded earthquakes does not mean that it was the trend over time. 
+          </i>
+      </div>
 
   </section>
   `,
@@ -60,11 +64,26 @@ import { Component, OnInit } from '@angular/core';
     padding: 80px;
     margins: 0px;
   }
+
+  button {
+    padding: 10px;
+    margins: 0px;
+    width: 100%;
+  }
+
+  .hidden {
+    display: block;
+    font-style: italic;
+    padding-left: 0em;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+    }
   `
   ]
 })
 export class TopCountriesComponent implements OnInit {
 
+  showAnswer: boolean = false;
   constructor() { }
 
   ngOnInit(): void {

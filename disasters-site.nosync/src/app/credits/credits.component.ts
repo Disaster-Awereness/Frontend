@@ -20,10 +20,18 @@ import { Component, OnInit } from '@angular/core';
     <h4>Images</h4>
       <ul style="list-style-type:none;">
         <li>[I] <a href="https://earthquake.usgs.gov/" target="_blank">Safety before, during and after an earthquake</a> by USGS </li>
-        <li>[II].....</li>
-        <li>[III].....</li>
-        <li>[IV].....</li>
+        <li>[II] <a href="https://www.swedishnomad.com/wp-content/images/2019/04/Earthquake-facts.jpg" target="_blank">Earthquake magnitude scale</a> by swedishnomad </li>
+        <li>[III] <a href="https://zahlenparty.de/wp-content/uploads/1976.jpg" target="_blank">Year 1976e</a> by zahlenparty </li>
+        <li>[IV] <a href="https://upload.wikimedia.org/wikipedia/commons/7/78/Flag_of_Chile.svg" target="_blank">Flag of Chile</a> by wikipedia </li>
+        <li>[V] <a href="https://www.bluebird-electric.net/oceanography/ocean_pictures/Pacific-Ocean-RIng-Of-Fire-Map.jpg" target="_blank">Pacific ring</a> by bluebird </li>
+        <li>[VI] <a href="https://www.sos-kinderdoerfer.de/getmedia/5f7b0e66-2f26-4912-b30b-a50f8ce2186e/haiti-erdbeben-karte-C.jpg?width=260&height=173&ext=.jpg" target="_blank">Haiti's earthquake</a> by sos-kinderdoerfer </li>
       </ul>
+
+      
+      
+      
+      
+
       <br>
     <h4>Data</h4>
       <ul style="list-style-type:none;">
