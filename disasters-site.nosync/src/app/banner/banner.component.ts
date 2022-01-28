@@ -6,7 +6,7 @@ import { bufferToggle } from 'rxjs';
   template: `
   <section class="section" id="banner">
     <div class="banner">
-      <h3 class="title">&#9432; &emsp;<ng-content></ng-content>
+      <h3 class="banner">&#9432; &emsp;<ng-content></ng-content>
       </h3>
     </div>
   </section>
@@ -19,6 +19,8 @@ import { bufferToggle } from 'rxjs';
     padding: 10px;
     height: 6px;
     text-align: center;
+    font-family: "Verdana";
+    color: #4a4a4a;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
   <!-- <app-summary></app-summary> -->
 
   <!--Banner for introduction-->
-  <app-banner>The first person to come up with a scientific explanation of earthquakes
+  <app-banner style="font-family: Verdana">The first person to come up with a scientific explanation of earthquakes
      was Cambridge professor John Michell</app-banner>
 
   <!--Introduction-->
@@ -53,12 +53,7 @@ import { Component } from '@angular/core';
   <app-did-you-know></app-did-you-know>
 
   <!--Banner for safety-->
-  <app-banner>Safety Advice
-    <p class="subtitle">
-      To stay safe before, during & after an earthquake, review the following tips
-    </p>
-
-  </app-banner>
+  <app-banner>Safety Advice</app-banner>
 
   <!--Safety-->
   <app-safety></app-safety>

@@ -25,7 +25,7 @@ import { Component, OnInit } from '@angular/core';
                 <div class="card-content">
                     <a>Taken from:</a> <br>
                     <a href="https://earthquake.usgs.gov/">https://earthquake.usgs.gov/</a> <br>
-                    <a>@Staysafety</a>
+                    <a>@Staysafe</a>
                     <a href="#">#BeforeEarthquakes</a>
                     <a href="#">#USGS</a>
                     <br />
@@ -53,7 +53,7 @@ import { Component, OnInit } from '@angular/core';
                 <div class="card-content">
                     <a>Taken from:</a> <br>
                     <a href="https://earthquake.usgs.gov/">https://earthquake.usgs.gov/</a> <br>
-                    <a>@Staysafety</a>
+                    <a>@Staysafe</a>
                     <a href="#">#DuringEarthquakes</a>
                     <a href="#">#USGS</a>
                     <br />
@@ -81,7 +81,7 @@ import { Component, OnInit } from '@angular/core';
                 <div class="card-content">
                     <a>Taken from:</a> <br>
                     <a href="https://earthquake.usgs.gov/">https://earthquake.usgs.gov/</a> <br>
-                    <a>@Staysafety</a>
+                    <a>@Staysafe</a>
                     <a href="https://earthquake.usgs.gov/">#AfterEarthquakes</a>
                     <a href="#">#USGS</a>
                     <br />

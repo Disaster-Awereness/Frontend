@@ -43,15 +43,6 @@ import { Component, OnInit } from '@angular/core';
     <app-map></app-map>
     </div>
     </div>
-    <button class="question" style= "background-color:#84b1e0; border-radius:5px;" (click)="showAnswer=!showAnswer">Can you find some of the heaviest earthquakes in recent history?</button>
-      <div class="hidden" *ngIf="showAnswer">
-           <br> 
-           We put the answer here!
-           
-           Like: Some of the biggest events listed...
-           <br>
-           Still working on it!
-      </div>
   </section>
   `,
   styles: [
