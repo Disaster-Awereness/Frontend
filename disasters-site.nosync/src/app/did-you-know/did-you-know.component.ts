@@ -60,6 +60,7 @@ import { Component, OnInit } from '@angular/core';
                           <app-bar-chart></app-bar-chart>
                           <br>
                           <img src="https://www.swedishnomad.com/wp-content/images/2019/04/Earthquake-facts.jpg" alt="Italian Trulli">
+                          <p class="content">Reference: Image [II]</p>
                       </article>
                   </div>
               </div>
