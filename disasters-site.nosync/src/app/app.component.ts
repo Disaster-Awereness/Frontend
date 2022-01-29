@@ -35,7 +35,7 @@ import { Component } from '@angular/core';
   <app-consequences></app-consequences>
 
   <!--Banner for countries-->
-  <app-banner>Looking at the country level...</app-banner>
+  <app-banner>Looking at the earthquake density on country level</app-banner>
 
   <!--By country-->
   <app-by-country></app-by-country>
