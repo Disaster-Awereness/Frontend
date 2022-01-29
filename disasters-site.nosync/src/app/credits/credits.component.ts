@@ -11,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
   <div class="hidden" *ngIf="showAnswer">
     <h4>Literature</h4>
       <ul style="list-style-type:none;">
-        <li>[1] Earthquakes in human history - Jelle Zeilinga de Boer and Donald Theodore Sanders, Princeton University Press, 2004.</li>
+        <li id="introduction_ref">[1] Earthquakes in human history - Jelle Zeilinga de Boer and Donald Theodore Sanders, Princeton University Press, 2004.</li>
         <li>[2] <a href="https://en.wikipedia.org/wiki/Earthquake" target="_blank">Earthquake</a></li>
         <li>[3] <a href="https://spaceplace.nasa.gov/earthquakes/en/" target="_blank">What Is an Earthquake? | NASA Space Place – NASA Science for Kids</a></li> 
         <li>[4] <a href="https://pubs.usgs.gov/gip/earthq1/history.html" target="_blank">Earthquakes - General Interest Publication</a></li>
