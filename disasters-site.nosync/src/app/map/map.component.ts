@@ -78,6 +78,9 @@ export class MapComponent implements AfterViewInit {
 
     // loop through our intervals and generate a label with a colored square for each interval
     for (var i = 0; i < grades.length; i++) {
+      if (i == 0) {
+        div.innerHTML = '<b>Magnitude (Richter scale)</b><br>'
+      }
       div.innerHTML +=
         '<span style="height:0.8em; width:0.8em; background-color:' + getColor(grades[i]) + '; border-radius:50%; display: inline-block"></span>' 
         + '&emsp;' + labels[i] + '<br>';

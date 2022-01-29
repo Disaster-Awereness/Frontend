@@ -292,7 +292,7 @@ info.onAdd = function (mymap:any) {
 
 //  Update the control based on feature properties passed.
 info.update = function (props:any) {
-  this._div.innerHTML = '<div id="infobox" style="background: rgba(255,255,255,0.8); padding: 6px 8px; box-shadow: 0 0 15px rgba(0,0,0,0.4); border-radius: 5px;"><h5>No. of earthquakes by country size</h5>' +  (props ?
+  this._div.innerHTML = '<div id="infobox" style="background: rgba(255,255,255,0.8); padding: 6px 8px; box-shadow: 0 0 15px rgba(0,0,0,0.4); border-radius: 5px;"><h5>No. of earthquakes <b>by country size</b></h5>' +  (props ?
     '<b>' + props.name + '</b><br />' + props.earthquakes + ' earthquakes occured here!'
     : 'Hover over a country! <br> You can explore the No. of earthquakes & the color scale displays earthquakes by size! </div>');
 };
@@ -309,6 +309,9 @@ legend.onAdd = function (mymap:any) {
 
   // loop through our intervals and generate a label with a colored square for each interval
   for (var i = 0; i < grades.length; i++) {
+    if (i == 0) {
+      div.innerHTML = '<b>Earthquake events<br>(1900-2021)</b><br>'
+    }
     div.innerHTML +=
       '<span style="height:0.8em; width:0.8em; background-color:' + getColor(grades[i]) + '; border-radius:50%; display: inline-block"></span>' 
       + '&emsp;' + labels[i] + '<br>';
