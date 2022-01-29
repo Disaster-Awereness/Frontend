@@ -20,7 +20,7 @@ import {single, multi} from './data';
   `,
   styles: [`
     .card {
-      width: 700px;
+      width: 830px;
       height: 60%;
       border: 2px solid grey;
       background-color: white;
