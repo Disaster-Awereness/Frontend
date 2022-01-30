@@ -52,7 +52,7 @@ import { Component, OnInit } from '@angular/core';
   <button class="question" style= "background-color:#e4e6f0; border-radius:5px;" (click)="showAnswer=!showAnswer">Are there less impacts before 1968? <br> <b>Click to see the reason!</b></button>
       <div class="hidden" *ngIf="showAnswer">
           <br> 
-          <i>The visualisations show the numbers reported of people affected by earthquakes. Note that the <i> available data </i> report a series of data much complete for the last decades than for the historic estimates before 1968, which show in many ocassions no data or low tendencies in comarison with recent years. This may be caused due to the lack of reports or documentation collected to populate the data. 
+          <i>The visualisations show the numbers reported of people affected by earthquakes. Note that the <i> available data </i> report a series of data much complete for the last decades than for the historic estimates before 1968, which show in many ocassions no data or low tendencies in comparison with recent years. This may be caused due to the lack of reports or documentation collected to populate the data. 
           However, an increase in the number of recorded earthquakes does not mean that it was the trend over time. 
           </i>
       </div>
